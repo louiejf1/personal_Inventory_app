@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import Footer from "../Components//Footer";
+import Button from "../Components/Button";
+import Items from "../Components/ItemInfo"
 
 export default function Collectables() {
-    return (
+  return (
+    <div className="MainCollectablesDiv">
+      <div className="container-fluid">
         <div>
-            <h1>Hello From Collectables Page</h1>
+          <Button />
         </div>
-    )
+        <div>
+         <Items/>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 }
