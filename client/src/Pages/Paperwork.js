@@ -1,9 +1,32 @@
-import React from 'react'
+import React from "react";
+import Footer from "../Components//Footer";
+import Button from "../Components/Button";
 
 export default function Paperwork() {
-    return (
+  return (
+    <div className="MainPaperworkDiv">
+      <div className="container-fluid">
         <div>
-            <h1>Hello from Paperwork</h1>
+          <Button />
         </div>
-    )
+        <div>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+          Contents section <br></br>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 }

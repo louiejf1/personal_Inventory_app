@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
 export default function Button() {
-    return (
-        <div>
-            Button
-        </div>
-    )
+  return (
+    <div>
+      <div className="btn-group" role="group" aria-label="Basic example">
+        <button type="button" className="btn btn-secondary">
+          Left
+        </button>
+        <button type="button" className="btn btn-secondary">
+          Middle
+        </button>
+        <button type="button" className="btn btn-secondary">
+          Right
+        </button>
+      </div>
+    </div>
+  );
 }
