@@ -25,6 +25,11 @@ function Navigation() {
             </a>
           </li>
           <li className="nav-item">
+            <a className="nav-link" href="/closet">
+            Closet
+            </a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link" href="/collectables">
             Collectables
             </a>
