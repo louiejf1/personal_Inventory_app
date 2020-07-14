@@ -2,14 +2,14 @@ import React from "react";
 import Button from './Button'
 
 
-function DeleteBtn(props) {
+function SaveBtn(props) {
     function handleClick(){
-        deleteItem()
+        addItem()
     }
-    function deleteItem(id, value) {
+    function addItem(id, value) {
         // add code here to remove a book using API
         
-        API.deleteItem(id, value).then(res=>"somethingcall"())
+        API.addItem(id, value).then(res=>${}())
       }
   return (
     <Button onClick ={handleClick} buttonName="x"></Button>
@@ -17,5 +17,3 @@ function DeleteBtn(props) {
 }
 
 export default DeleteBtn;
-
-
