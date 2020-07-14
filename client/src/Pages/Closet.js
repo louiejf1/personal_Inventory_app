@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from "../Components//Footer";
 import Button from "../Components/Button";
-import Items from "../Components/ItemInfo"
+import TableCloset from "../Components/TableCloset"
 
 export default function Closet() {
   return (
@@ -11,7 +11,7 @@ export default function Closet() {
           <Button />
         </div>
         <div>
-         <Items/>
+         <TableCloset />
         </div>
       </div>
       <Footer />
