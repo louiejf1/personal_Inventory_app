@@ -1,9 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
 const inventoryItemsSchema = new Schema({
     
-    // grabs data from other schemas based on ID
+    closet: {type: mongoose.Schema.Types.ObjectId,ref: "closet"},
+    collectibles: {type: mongoose.Schema.Types.ObjectId,ref: "collectibles"},
+    paperwork: {type: mongoose.Schema.Types.ObjectId,ref: "paperwork"},
+    donations: {type: mongoose.Schema.Types.ObjectId,ref: "donations"}
 
 });
 
