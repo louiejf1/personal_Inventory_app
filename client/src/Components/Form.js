@@ -6,16 +6,16 @@ export default function Form() {
   return (
     <div>
       <div className="container-fluid mainFormDiv">
-        <div>form</div>
+        <div>Save New Item</div>
         <div>
         <form>
           <div>
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
+            <label>Item Information</label>
+            <input type="email" class="form-control" placeholder="Enter email"></input>
           </div>
           <div>
-            <label for="exampleInputPassword1">Password</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
+            <label></label>
+            <input type="email" class="form-control" placeholder="Enter email"></input>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>

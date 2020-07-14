@@ -4,7 +4,7 @@ import Button from "../Components/Button";
 
 
 function handleclick(){
-    
+
 }
 
 
@@ -17,11 +17,11 @@ export default function Form() {
         <form>
           <div>
             <label>Title</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={}></input>
+            <input type="email" class="form-control"  value={}></input>
           </div>
           <div>
-            <label for="exampleInputPassword1">Password</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
+            <label></label>
+            <input type="email" class="form-control"  placeholder="Enter email"></input>
           </div>
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
