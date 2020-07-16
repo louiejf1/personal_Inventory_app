@@ -13,29 +13,18 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+
         <Navigation />
 
-<<<<<<< HEAD
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/closet" component={Closet} />
             <Route path="/collectables" component={Collectables} />
             <Route path="/paperwork" component={Paperwork} />
             <Route path="/register" component={Register} />
-            <Route path="/about" component={About} />
           </Switch>
         </Router>
-=======
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/closet" component={Closet} />
-              <Route path="/collectables" component={Collectables} />
-              <Route path="/paperwork" component={Paperwork} />
-              <Route path="/register" component={Register} />
-            </Switch>
-          </Router>
->>>>>>> origin
 
       </React.Fragment>
     );
