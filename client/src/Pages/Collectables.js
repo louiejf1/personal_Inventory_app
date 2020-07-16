@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "../Components//Footer";
 import Button from "../Components/Button";
-import Items from "../Components/ItemInfo"
-import TableCollectibles from "../Components/TableCollectibles";
+import TableCollectibles from "../Components/TableCollectibles"
 
 export default function Collectables() {
   return (

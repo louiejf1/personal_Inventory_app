@@ -28,4 +28,4 @@ function Table(props){
     )
 }
 
-export default TableCollectibles;
+export default TableDocuments;

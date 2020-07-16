@@ -6,24 +6,22 @@ function Table(props){
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Image</th>
-                    <th>Description</th>
-                    <th>Item Cost</th>
-                    <th># of Times Worn</th>
-                    <th>Favorite</th>
+                    <th>Category</th>
+                    <th>Item Name</th>
+                    <th>Color</th>
+                    <th>Item Description</th>
+                    <th>Date</th>
                 </tr>
             </thead>
             <tbody>
                 {props.items.map(item=>{
                     return(
                         <tr key={item.id}>
-                            <td>{item.id}</td>
-                            <td><img src={item.image} alt="item"/></td>
-                            <td>{item.description}</td>
-                            <td>{item.price}</td>
-                            <td>{item.worn}</td>
-                            <td>{item.favorite}</td>
+                            <td>{item.invCategory}</td>
+                            <td>{item.invItemName}</td>
+                            <td>{item.color}</td>
+                            <td>{item.invItemDescription}</td>
+                            <td>{item.date}</td>
                         </tr>
                     )
                 })}

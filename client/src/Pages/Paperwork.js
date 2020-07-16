@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../Components//Footer";
 import Button from "../Components/Button";
+import TableDocuments from "../Components/TableDocuments"
 
 export default function Paperwork() {
   return (
@@ -10,20 +11,7 @@ export default function Paperwork() {
           <Button />
         </div>
         <div>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
+         <TableDocuments />
         </div>
       </div>
       <Footer />
