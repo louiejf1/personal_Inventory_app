@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/table.css";
 
-function Table(props){
+function TableDocuments(props){
     return(
         <table>
             <thead>
