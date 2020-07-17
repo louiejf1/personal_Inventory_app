@@ -19,5 +19,5 @@ export default function Footer() {
 const linkStyle = {
   color: '#fff',
   textDecoration: 'none',
-  textAlign: 'center'
+  textAlign: 'center',
 }

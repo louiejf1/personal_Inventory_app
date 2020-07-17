@@ -23,6 +23,7 @@ class App extends Component {
             <Route path="/collectables" component={Collectables} />
             <Route path="/paperwork" component={Paperwork} />
             <Route path="/register" component={Register} />
+            <Route path="/about" component={About} />
           </Switch>
         </Router>
 
