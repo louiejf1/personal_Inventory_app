@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import Closet from "./Pages/Closet";
 import Collectables from "./Pages/Collectables";
 import Paperwork from "./Pages/Paperwork";
@@ -14,15 +14,15 @@ class App extends Component {
       <React.Fragment>
         <Navigation />
 
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/closet" component={Closet} />
-              <Route path="/collectables" component={Collectables} />
-              <Route path="/paperwork" component={Paperwork} />
-              <Route path="/register" component={Register} />
-            </Switch>
-          </Router>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/closet" component={Closet} />
+            <Route path="/collectables" component={Collectables} />
+            <Route path="/paperwork" component={Paperwork} />
+            <Route path="/register" component={Register} />
+          </Switch>
+        </Router>
 
       </React.Fragment>
     );
