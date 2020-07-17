@@ -1,17 +1,11 @@
 import React from "react";
 
-export default function Button() {
+export default function Button(props) {
   return (
     <div>
       <div className="btn-group" role="group" aria-label="Basic example">
         <button type="button" className="btn btn-secondary">
-          Left
-        </button>
-        <button type="button" className="btn btn-secondary">
-          Middle
-        </button>
-        <button type="button" className="btn btn-secondary">
-          Right
+          {props.buttonName}
         </button>
       </div>
     </div>
