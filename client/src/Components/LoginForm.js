@@ -44,7 +44,7 @@ const LoginForm = ({ login, isAuthenticated }) => {
                             placeholder="Password"
                             value={password} onChange={event => onChange(event)}
                             name="password"
-                        // minLength="6"
+                            minLength="6"
                         />
                     </div>
                     <input type="submit" className="btn btn-primary" value="Submit" />
