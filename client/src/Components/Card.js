@@ -2,25 +2,19 @@ import React from "react";
 
 export default function Card() {
   return (
-    <div>
-      <div>
-        <div className="row">
-          <div>
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Sign in</h5>
-                <p className="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
+    <section class="auth">
+      <div className="dark-overlay">
+        <div className="register-inner">
+          <h1 className="x-large">Hello.</h1>
+          <p className="lead">
+            Meet PIA. We are your Personal Inventory Assistant. Create your PIA account or Login to get started.
+          </p>
+          <div className="buttons">
+            <a href="/register" className="btn btn-primary">Sign Up</a>
+            <a href="/login" className="btn btn-light">Login</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

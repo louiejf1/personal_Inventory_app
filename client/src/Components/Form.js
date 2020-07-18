@@ -8,17 +8,17 @@ export default function Form() {
       <div className="container-fluid mainFormDiv">
         <div>Save New Item</div>
         <div>
-        <form>
-          <div>
-            <label>Item Information</label>
-            <input type="email" class="form-control" placeholder="Enter email"></input>
-          </div>
-          <div>
-            <label></label>
-            <input type="email" class="form-control" placeholder="Enter email"></input>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+          <form>
+            <div>
+              <label>Item Information</label>
+              <input type="email" class="form-control" placeholder="Enter email"></input>
+            </div>
+            <div>
+              <label></label>
+              <input type="email" class="form-control" placeholder="Enter email"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
 
