@@ -8,6 +8,7 @@ import Paperwork from "./Pages/Paperwork";
 import Register from "./Pages/Register";
 import Navigation from "./Components/Navigation";
 
+
 class App extends Component {
   render() {
     return (
