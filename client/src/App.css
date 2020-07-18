@@ -1,3 +1,12 @@
+/* Global Styles */
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
 .App {
   text-align: center;
 }
@@ -35,6 +44,12 @@
   background-size: cover;
 }
 
+.jumbotron {
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
 .mainFormDiv {
   align-items: center;
   text-align: center;
@@ -42,4 +57,30 @@
 
 .register {
   height: 450px;
+}
+
+.register-inner {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+/*hide Logout icon */
+.hide-sm {
+  display: none;
 }
