@@ -1,20 +1,4 @@
 /* Global Styles */
-:root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-color: #222;
@@ -42,6 +26,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .jumbotron {
@@ -53,6 +38,7 @@
 .mainFormDiv {
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .register {
@@ -83,4 +69,13 @@
 /*hide Logout icon */
 .hide-sm {
   display: none;
+}
+
+/* Dashboard Page */
+.dashboard-col {
+  margin: 5px;
+}
+
+.dashboard-col h3 {
+  text-align: center;
 }
