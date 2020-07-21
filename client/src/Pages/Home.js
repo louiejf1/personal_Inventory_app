@@ -4,6 +4,7 @@ import Footer from "../Components//Footer";
 import Card from "../Components/Card";
 import LoginCard from "../Components/LoginCard";
 
+
 export default function Home() {
   return (
     <>
