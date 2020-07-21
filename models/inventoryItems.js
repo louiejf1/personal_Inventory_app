@@ -16,7 +16,15 @@ const closetSchema = new Schema({
     invItemName: { type: String, required: true },
     color: { type: String, required: true },
     invItemDescription: String,
-    invItemImgUrl: String,
+    invItemImage: {
+        type: String,
+        default: "none",
+        required: true
+    },
+    invItemImageData: {
+        type: String,
+        required: true
+    },
     date: { type: Date, default: Date.now }
 });
 

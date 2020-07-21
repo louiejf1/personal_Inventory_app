@@ -8,6 +8,7 @@ import Paperwork from "./Pages/Paperwork";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Navigation from "./Components/Navigation";
+import Footer from "./Components/Footer";
 import Dashboard from './Pages/Dashboard';
 import Alert from './Components/layout/Alert';
 import PrivateRoute from '../src/Utils/PrivateRoute';
@@ -47,7 +48,7 @@ const App = () => {
 
           </Switch>
         </Router>
-
+        <Footer />
       </React.Fragment>
 
     </Provider >
