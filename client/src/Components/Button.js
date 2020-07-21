@@ -4,7 +4,7 @@ export default function Button(props) {
   return (
     <div>
       <div className="btn-group" role="group" aria-label="Basic example">
-        <button type="button" className="btn btn-secondary">
+        <button type={props.type} onClick={props.onClick} className="btn btn-secondary">
           {props.buttonName}
         </button>
       </div>
