@@ -1,6 +1,8 @@
 import React from "react";
 import Jumbotron from "../Components/Jumbotron";
 import Footer from "../Components//Footer";
+import Button from "../Components/Button";
+import LoginCard from "../Components/LoginCard";
 // import Button from "../Components/Card";
 import Card from "../Components/Card";
 
@@ -13,12 +15,12 @@ export default function Home() {
         <div className="row col-sm-12">
           <div className="col-sm-4"></div>
           <div className="col-sm-4">
-            <Card />
+            <LoginCard />
           </div>
           <div className="col-sm-4"></div>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }

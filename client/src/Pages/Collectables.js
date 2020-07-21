@@ -11,10 +11,10 @@ export default function Collectables() {
           <Button />
         </div>
         <div>
-         <Items/>
+          <Items />
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function Paperwork() {
           Contents section <br></br>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }

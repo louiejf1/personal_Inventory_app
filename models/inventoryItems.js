@@ -20,7 +20,7 @@ const closetSchema = new Schema({
     invItemImgUrl: String,
 
     invItemDescription: String,
-    important: {type: Boolean, default: false},
+    important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }
 });
@@ -32,7 +32,7 @@ const collectiblesSchema = new Schema({
 
     invItemImgUrl: String,
 
-    important: {type: Boolean, default: false},
+    important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }
 });
@@ -45,7 +45,7 @@ const paperworkSchema = new Schema({
     invItemImgUrl: String,
 
     invItemDescription: String,
-    important: {type: Boolean, default: false},
+    important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }
 });
@@ -57,7 +57,7 @@ const donationsSchema = new Schema({
 
     invItemImgUrl: String,
 
-    important: {type: Boolean, default: false},
+    important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }
 });
