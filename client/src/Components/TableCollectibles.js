@@ -13,7 +13,7 @@ function TableCollectibles(props){
                 </tr>
             </thead>
             <tbody>
-                {props.items.map(item=>{
+            {(props.items > 0) ? props.items.map(item=>{
                     return(
                         <tr key={item.id}>
                             <td>{item.invCategory}</td>
@@ -22,7 +22,9 @@ function TableCollectibles(props){
                             <td>{item.date}</td>
                         </tr>
                     )
-                })}
+                }): <tr>
+                <td>No items to display.</td>
+            </tr>}
             </tbody>
         </table>
     )
