@@ -7,6 +7,7 @@ import Weather from "../Components/Weather";
 
 const Dashboard = (props) => {
   return (
+
     <div class="container-fluid dashboard">
       <div class="col">
         <div class="row">
@@ -23,15 +24,11 @@ const Dashboard = (props) => {
             <Card />
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm dashboard-col">
-            <h3>Weather data card(s)</h3>
-            <Weather />
-          </div>
-        </div>
+        <div class="row"></div>
       </div>
-      <Footer />
     </div>
+
+
   );
 };
 
