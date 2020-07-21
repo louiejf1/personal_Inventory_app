@@ -4,6 +4,7 @@ import Button from "../Components/Button";
 import Items from "../Components/ItemInfo"
 import FileUpload from "../Components/FileUpload";
 import Form from "../Components/Form";
+import TableCollectibles from '../Components/TableCollectibles';
 
 export default function Collectables() {
   return (
@@ -19,7 +20,7 @@ export default function Collectables() {
           <h5>WishList</h5>
         </div>
         <div>
-          <Items />
+          <TableCollectibles />
         </div>
       </div>
 

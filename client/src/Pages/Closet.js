@@ -1,10 +1,14 @@
-import React from "react";
-import Footer from "../Components//Footer";
+import React, { useEffect, useState } from 'react';
+import Footer from "../Components/Footer";
 import Button from "../Components/Button";
 import Items from "../Components/ItemInfo";
 import Weather from "../Components/Weather";
+import TableCloset from "../Components/TableCloset";
+import API from "../Utils/API.js"
 
 export default function Closet() {
+  const [item, setItem] = useState({});
+  useEffect(() => { API.getClosets().then(item => { setItem(item.data) }) })
   return (
 
     <div className="MainClosetDiv">
@@ -18,11 +22,12 @@ export default function Closet() {
         <div>
           <Button />
         </div>
-        <div>
-          <Items />
-        </div>
+        <TableCloset
+          items={item}
+        />
       </div>
     </div>
+
 
   );
 }
