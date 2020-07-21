@@ -1,11 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+/* Global Styles */
 
 .App-header {
   background-color: #222;
@@ -19,8 +12,12 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .MainHomeDiv {
@@ -29,6 +26,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .jumbotron {
@@ -40,8 +38,44 @@
 .mainFormDiv {
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .register {
   height: 450px;
+}
+
+.register-inner {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+/*hide Logout icon */
+.hide-sm {
+  display: none;
+}
+
+/* Dashboard Page */
+.dashboard-col {
+  margin: 5px;
+}
+
+.dashboard-col h3 {
+  text-align: center;
 }

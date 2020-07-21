@@ -14,7 +14,6 @@ export default function Home() {
           <div className="col-sm-4"></div>
           <div className="col-sm-4">
             <Card />
-            <Card />
           </div>
           <div className="col-sm-4"></div>
         </div>
