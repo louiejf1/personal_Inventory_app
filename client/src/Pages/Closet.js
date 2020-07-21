@@ -1,16 +1,20 @@
-import React from 'react'
+import React from "react";
 import Footer from "../Components//Footer";
 import Button from "../Components/Button";
-import Items from "../Components/ItemInfo"
-import FileUpload from "../Components/FileUpload";
+import Items from "../Components/ItemInfo";
+import Weather from "../Components/Weather";
 
 export default function Closet() {
   return (
+
     <div className="MainClosetDiv">
       <div className="container-fluid">
-        <p className='text-center mb-4'>Upload file Test</p>
-
-        <FileUpload />
+        <div class="row">
+          <div class="col-sm dashboard-col">
+            <h3>Weather data card(s)</h3>
+            <Weather />
+          </div>
+        </div>
         <div>
           <Button />
         </div>
@@ -18,7 +22,7 @@ export default function Closet() {
           <Items />
         </div>
       </div>
-
     </div>
+
   );
 }

@@ -1,14 +1,13 @@
 import React from "react";
 import Jumbotron from "../Components/Jumbotron";
 import Footer from "../Components//Footer";
-import Button from "../Components/Button";
-import LoginCard from "../Components/LoginCard";
-// import Button from "../Components/Card";
 import Card from "../Components/Card";
+import LoginCard from "../Components/LoginCard";
 
 
 export default function Home() {
   return (
+
     <div className="MainHomeDiv">
       <Jumbotron />
       <div className="container-fluid register">
@@ -20,7 +19,8 @@ export default function Home() {
           <div className="col-sm-4"></div>
         </div>
       </div>
-
     </div>
+
+
   );
 }

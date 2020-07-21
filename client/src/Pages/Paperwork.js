@@ -4,6 +4,7 @@ import Button from "../Components/Button";
 
 export default function Paperwork() {
   return (
+
     <div className="MainPaperworkDiv">
       <div className="container-fluid">
         <div>
@@ -11,22 +12,23 @@ export default function Paperwork() {
         </div>
         <div>
           Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
-          Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
+            Contents section <br></br>
         </div>
       </div>
-
     </div>
+
+
   );
 }
