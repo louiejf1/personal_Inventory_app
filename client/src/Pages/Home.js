@@ -1,8 +1,9 @@
 import React from "react";
 import Jumbotron from "../Components/Jumbotron";
 import Footer from "../Components//Footer";
-import Button from "../Components/Card";
+// import Button from "../Components/Card";
 import Card from "../Components/Card";
+
 
 export default function Home() {
   return (

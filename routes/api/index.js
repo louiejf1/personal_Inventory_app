@@ -3,6 +3,7 @@ const inventoryItemsRoutes = require("./inventoryItems");
 const usersRoute = require("./users");
 const authRoute = require("./auth");
 
+
 // routes
 router.use("/inventoryItems", inventoryItemsRoutes);
 router.use("/api/users", usersRoute);
