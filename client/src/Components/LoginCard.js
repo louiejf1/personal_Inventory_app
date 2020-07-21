@@ -3,17 +3,16 @@ import React from "react";
 export default function Card() {
   return (
     <section class="auth">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+      <div className="dark-overlay">
+        <div className="register-inner">
+          <h1 className="x-large">Hello.</h1>
+          <p className="lead">
+            Meet PIA. We are your Personal Inventory Assistant. Create your PIA account or Login to get started.
           </p>
-          <a href="#" class="btn btn-primary">
-            Go somewhere
-          </a>
+          <div className="buttons">
+            <a href="/register" className="btn btn-primary">Sign Up</a>
+            <a href="/login" className="btn btn-light">Login</a>
+          </div>
         </div>
       </div>
     </section>
