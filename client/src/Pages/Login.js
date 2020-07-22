@@ -8,7 +8,11 @@ export default function Register() {
     return (
         <div>
             <LoginForm />
+<<<<<<< HEAD
             <Footer />
+=======
+
+>>>>>>> master
         </div>
     )
 }

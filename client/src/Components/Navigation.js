@@ -1,13 +1,12 @@
 import React, { Fragment } from "react";
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { logout } from '../actions/auth';
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { logout } from "../actions/auth";
 
 const Navigation = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-
+    <nav className="navbar navbar-expand-lg">
       <button
         className="navbar-toggler"
         type="button"
@@ -29,24 +28,24 @@ const Navigation = ({ auth: { isAuthenticated, loading }, logout }) => {
           <li className="nav-item">
             <a className="nav-link" href="/closet">
               Closet
-        </a>
+            </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/collectables">
               Collectables
-        </a>
+            </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/paperwork">
               Paperwork
-        </a>
+            </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" onClick={logout} href="#!">
               {/* <i className="fas fa-sign-out alt"></i>{' '}
           <span className="hide-sm">Logout</span> */}
-          Logout
-        </a>
+              Logout
+            </a>
           </li>
 
         </ul>
@@ -60,36 +59,37 @@ const Navigation = ({ auth: { isAuthenticated, loading }, logout }) => {
         <li className="nav-item">
           <a className="nav-link" href="/register">
             Register
-            </a>
+          </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/login">
             Login
-            </a>
+          </a>
         </li>
-
       </ul>
     </div>
   );
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg">
       <a className="navbar-brand" href="/">
         PIA
       </a>
 
-      {!loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}
+      {!loading && (
+        <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
+      )}
     </nav>
   );
-}
+};
 
 Navigation.prototype = {
   logout: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
-}
+  auth: PropTypes.object.isRequired,
+};
 
-const mapStateToProps = state => ({
-  auth: state.auth
-})
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
 
-export default connect(mapStateToProps, ({ logout }))(Navigation);
+export default connect(mapStateToProps, { logout })(Navigation);
