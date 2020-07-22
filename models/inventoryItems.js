@@ -12,18 +12,6 @@ const inventoryItemsSchema = new Schema({
 });
 
 const closetSchema = new Schema({
-<<<<<<< HEAD
-    invCategory: { type: String, required: true },
-    invItemName: { type: String, required: true },
-    color: { type: String, required: true },
-    invItemDescription: String,
-    invItemImgUrl: String,
-    date: { type: Date, default: Date.now }
-});
-
-const collectiblesSchema = new Schema({
-=======
->>>>>>> master
     invCategory: { type: String, required: true },
     invItemName: { type: String, required: true },
 
@@ -32,9 +20,6 @@ const collectiblesSchema = new Schema({
     invItemImgUrl: String,
 
     invItemDescription: String,
-<<<<<<< HEAD
-    invItemImgUrl: String,
-=======
     important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }
@@ -49,17 +34,12 @@ const collectiblesSchema = new Schema({
 
     important: { type: Boolean, default: false },
 
->>>>>>> master
     date: { type: Date, default: Date.now }
 });
 
 const paperworkSchema = new Schema({
     invCategory: { type: String, required: true },
     invItemName: { type: String, required: true },
-<<<<<<< HEAD
-    important: { type: Boolean, default: false },
-    invItemImgUrl: String,
-=======
 
     important: { type: Boolean, default: false },
     invItemImgUrl: String,
@@ -67,7 +47,6 @@ const paperworkSchema = new Schema({
     invItemDescription: String,
     important: { type: Boolean, default: false },
 
->>>>>>> master
     date: { type: Date, default: Date.now }
 });
 
@@ -75,15 +54,11 @@ const donationsSchema = new Schema({
     invCategory: { type: String, required: true },
     invItemName: { type: String, required: true },
     invItemDescription: String,
-<<<<<<< HEAD
-    invItemImgUrl: String,
-=======
 
     invItemImgUrl: String,
 
     important: { type: Boolean, default: false },
 
->>>>>>> master
     date: { type: Date, default: Date.now }
 });
 

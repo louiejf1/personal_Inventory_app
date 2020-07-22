@@ -1,16 +1,4 @@
 /* Global Styles */
-<<<<<<< HEAD
-:root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
-}
-
-.App {
-  text-align: center;
-=======
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 body {
@@ -21,7 +9,6 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: #e8e9ed;
   color: #53599a;
->>>>>>> master
 }
 
 .MainHomeDiv {
@@ -50,20 +37,10 @@ body {
   height: 100vh;
 }
 
-<<<<<<< HEAD
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-=======
 .mainFormDiv {
   align-items: center;
   text-align: center;
   margin: 0 auto;
->>>>>>> master
 }
 
 .dashboard {
