@@ -2,6 +2,11 @@ import React, { useState} from "react";
 import Button from "./Button";
 import API from "../Utils/API"
 
+
+// use reducer for switch states statements
+// actions and displays
+
+
 function Form() {
   const [formObject,setFormObject] = useState({
     invCategory: " ",
@@ -9,12 +14,15 @@ function Form() {
     invItemDescription: " ", 
     important: false,
   })
-
+console.log(API)
+const [saveCategory, setSaveCategory]=useState("")
   // don't need when using checkboxes
   const handleChangeCategory = (event) =>{
     event.preventDefault();
     const invCategory = event.target.options[event.target.selectedIndex].text;
     setFormObject({...formObject, invCategory: invCategory})
+    console.log(`this is my data ${event.target.value}` )
+    setSaveCategory(event.target.value)
   }
 
   const handleChangeItem = (event) =>{
@@ -41,16 +49,17 @@ function Form() {
 
   const handleFormSave = (event)=>{
     event.preventDefault();
-    const categoryData = event.target.value
+    // const categoryData = event.target.value
     console.log("Item has been saved!")
     console.log(formObject)
-    console.log(categoryData)
-    API.categoryData({formObject}).then(cancelItem())
+    // console.log(" This is " + categoryData)
+    API[saveCategory]({formObject})
   }
   
   const cancelItem = ()=>{
     // clears all input data and resets the option area and sends user back to 
     // the dashboard page
+    console.log("Help me")
     setFormObject({
       invCategory: " ",
       invItemName: " ",
@@ -58,6 +67,7 @@ function Form() {
       important: false,
       })
   }
+  const testButton = ()=> console.log("testclick")
 
   return (
     <div>
@@ -66,10 +76,10 @@ function Form() {
           <div>
             <div className="card">
               <div className="card-body">
-              <form>
+              <form onSubmit={(event)=> handleFormSave(event)}>
                 <div>
                   {/* use checkboxes (use for ref) */}
-                  <select onChange= {handleChangeCategory} name="invCategory">
+                  <select onChange= {handleChangeCategory} value ={saveCategory}name="invCategory">
                     <option value=" ">None</option>
                     <option value="saveCloset">Closet</option>
                     <option value="saveCollectibles">Collectibles</option>
@@ -81,12 +91,12 @@ function Form() {
                   <input type="checkbox" onChange={handleChangeImportant} name="important" />
                 </div>
                 <div>
-                  {/* <Button onClick={()=>handleFormSave}/> */}
-                  <Button type="submit" onClick={handleFormSave}/>  
+                  <Button type="submit"  buttonName={"Save"}/>  
+                  <button type="submit" onClick={testButton}>Test</button>
                     
                 </div>
                 <div>
-                  <Button onClick={cancelItem} />
+                  <Button buttonName={"Cancel"}/>
                     
                 </div>
               </form>

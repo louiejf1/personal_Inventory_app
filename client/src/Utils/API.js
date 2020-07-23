@@ -3,78 +3,78 @@ import axios from 'axios';
 export default {
     // get all items from array
     getClosets: function () {
-        return axios.get('/api/closets')
+        return axios.get('/api/inventoryItems')
     },
     // get item from array with the given id
     getCloset: function (id) {
-        return axios.get('/api/closets' + id)
+        return axios.get('/api/inventoryItems' + id)
     },
     // deletes item from array with given id
     deleteCloset: function (id) {
-        return axios.delete('/api/closets' + id)
+        return axios.delete('/api/inventoryItems' + id)
     },
     // save the item to the database
     saveCloset: function (itemData) {
-        return axios.post('/api/closets', itemData)
+        return axios.post('/api/inventoryItems', itemData)
     },
     updateCloset: function (id) {
-        return axios.update('/api/closet' + id)
+        return axios.update('/api/inventoryItems' + id)
     },
     // get all items from array
     getCollectibles: function () {
-        return axios.get('/api/collectibles')
+        return axios.get('/api/inventoryItems')
     },
     // get item from array with the given id
     getCollectibles: function (id) {
-        return axios.get('/api/collectibles' + id)
+        return axios.get('/api/inventoryItems' + id)
     },
     // deletes item from array with given id
     deleteCollectibles: function (id) {
-        return axios.delete('/api/collectibles' + id)
+        return axios.delete('/api/inventoryItems' + id)
     },
     // save the item to the database
     saveCollectibles: function (itemData) {
-        return axios.post('/api/collectibles', itemData)
+        return axios.post('/api/inventoryItems', itemData)
     },
     updateCollectibles: function (id) {
-        return axios.update('/api/collectibles' + id)
+        return axios.update('/api/inventoryItems' + id)
     },
     // get all items from array
     getDonations: function () {
-        return axios.get('/api/donations')
+        return axios.get('/api/inventoryItems')
     },
     // get item from array with the given id
     getDonation: function (id) {
-        return axios.get('/api/donations' + id)
+        return axios.get('/api/inventoryItems' + id)
     },
     // deletes item from array with given id
     deleteDonation: function (id) {
-        return axios.delete('/api/donations' + id)
+        return axios.delete('/api/inventoryItems' + id)
     },
     // save the item to the database
     saveDonation: function (itemData) {
-        return axios.post('/api/donations', itemData)
+        return axios.post('/api/inventoryItems', itemData)
     },
     updateDonation: function (id) {
-        return axios.update('/api/donations' + id)
+        return axios.update('/api/inventoryItems' + id)
     },
     // get all items from array
     getPaperworks: function () {
-        return axios.get('/api/paperwork')
+        return axios.get('/api/inventoryItems')
     },
     // get item from array with the given id
     getPaperwork: function (id) {
-        return axios.get('/api/paperwork' + id)
+        return axios.get('/api/inventoryItems' + id)
     },
     // deletes item from array with given id
     deletePaperwork: function (id) {
-        return axios.delete('/api/paperwork' + id)
+        return axios.delete('/api/inventoryItems' + id)
     },
     // save the item to the database
     savePaperwork: function (itemData) {
-        return axios.post('/api/paperwork', itemData)
+        return axios.post('/api/inventoryItems', itemData)
     },
     updatePaperwork: function (id) {
-        return axios.update('/api/paperwork' + id)
+        return axios.update('/api/inventoryItems' + id)
     }
 }
