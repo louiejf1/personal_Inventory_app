@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose"); // Added 7-10-2020
+const routes = require("./routes");
 const path = require("path");
 const config = require('config');
 const fileUpload = require('express-fileupload');
@@ -26,7 +27,7 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalinventory"); // Aadded 7-10-2020
 
 // Add routes, both API and view
-app.use(require('./routes/api'));
+app.use(routes);
 app.use(fileUpload());
 
 //Upload Endpoint from React
