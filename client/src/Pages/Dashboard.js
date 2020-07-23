@@ -9,6 +9,7 @@ import Reducer from "../Components/Reducer"
 
 const Dashboard = (props) => {
   return (
+
     <>
       <div className="container-fluid dashboard">
         <div className="col">
@@ -35,9 +36,11 @@ const Dashboard = (props) => {
               <Reducer />
             </div></div>
         </div>
+        <div class="row"></div>
       </div>
-      <Footer />
-    </>
+    </div>
+
+
   );
 };
 
