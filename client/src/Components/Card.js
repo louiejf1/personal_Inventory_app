@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Card() {
+
   return (
     <section className="auth">
       <div className="card">
@@ -14,8 +15,8 @@ export default function Card() {
           <a href="#" className="btn btn-primary">
             Go somewhere
           </a>
-        </div>
-      </div>
-    </section>
-  );
+                </div>
+            </div>
+        </section>
+    );
 }

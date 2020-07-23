@@ -9,7 +9,8 @@ import Form from "../Components/Form"
 
 const Dashboard = (props) => {
   return (
-    <>
+
+    <div>
       <div className="container-fluid dashboard">
         <div className="col">
           <div className="row">
@@ -35,9 +36,11 @@ const Dashboard = (props) => {
               <Form />
             </div></div>
         </div>
+        <div class="row"></div>
       </div>
-      <Footer />
-    </>
+    </div>
+
+
   );
 };
 
