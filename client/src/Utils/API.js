@@ -2,8 +2,11 @@ import axios from 'axios';
 
 export default {
     // get all items from array
+
     getInventoryItems: function () {
         return axios.get('/api/inventoryItems');
+
+
     }
     // // get item from array with the given id
     // getCloset: function (id) {
