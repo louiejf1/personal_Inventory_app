@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Button from "../Components/Button";
-<<<<<<< HEAD
-import TableCollectibles from "../Components/TableCollectibles"
-=======
 import Items from "../Components/ItemInfo"
 import FileUpload from "../Components/FileUpload";
 import Form from "../Components/Form";
@@ -12,7 +9,6 @@ import Axios from 'axios';
 import { Provider } from "../Components/wishlistContext";
 import WishlistAdd from '../Components/WishlistAdd';
 import WishlistHeader from '../Components/WishlistHeader';
->>>>>>> b5c38ef0e88eec9000379516c09f95f802fd4809
 
 export default function Collectables() {
 
@@ -55,11 +51,7 @@ export default function Collectables() {
           </div>
         </Provider>
         <div>
-<<<<<<< HEAD
-         <TableCollectibles />
-=======
           <TableCollectibles />
->>>>>>> b5c38ef0e88eec9000379516c09f95f802fd4809
         </div>
       </div>
 

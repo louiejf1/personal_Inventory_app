@@ -1,17 +1,10 @@
 import React from "react";
 import "../styles/table.css";
 
-<<<<<<< HEAD
-function TableCloset(props){
-    console.log(props.items);
-    
-    return(
-=======
 function TableCloset(props) {
     console.log(props.items);
 
     return (
->>>>>>> b5c38ef0e88eec9000379516c09f95f802fd4809
         <table>
             <thead>
                 <tr>
@@ -24,15 +17,9 @@ function TableCloset(props) {
                 </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
-                {(props.items > 0) ? props.items.map(item=>{
-                    
-                    return(
-=======
                 {(props.items > 0) ? props.items.map(item => {
 
                     return (
->>>>>>> b5c38ef0e88eec9000379516c09f95f802fd4809
                         <tr key={item.id}>
                             <td>{item.invCategory}</td>
                             <td>{item.invItemName}</td>

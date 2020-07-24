@@ -4,6 +4,7 @@ const routes = require("./routes");
 const path = require("path");
 const config = require('config');
 const fileUpload = require('express-fileupload');
+const inventoryItems = require("./routes/api/inventoryItems");
 
 // const routes = require("./routes"); // Aadded 7-10-2020
 const PORT = process.env.PORT || 3001;
@@ -11,6 +12,8 @@ const app = express();
 
 //for Postman testing - added 7-14-20
 app.get('/', (req, res) => res.send('API Running'));
+
+
 
 
 // Middleware - added 7-10-2020
@@ -27,7 +30,9 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalinventory"); // Aadded 7-10-2020
 
 // Add routes, both API and view
-app.use(routes);
+app.use(routes)
+app.use("/inventory",inventoryItems)
+
 app.use(fileUpload());
 
 //Upload Endpoint from React

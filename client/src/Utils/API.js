@@ -3,8 +3,8 @@ import axios from 'axios';
 export default {
     // get all items from array
 
-    getInventoryItems: function () {
-        return axios.get('/api/inventoryItems');
+    getInventoryItems: async function () {
+        return await axios.get('localhost:3001/inventoryItems');
 
 
     }
