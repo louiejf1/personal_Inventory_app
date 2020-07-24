@@ -25,7 +25,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
 }
 
 .MainPaperworkDiv {
@@ -34,7 +34,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
 }
 
 .mainFormDiv {
@@ -48,7 +48,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
 }
 
 .MainCollectablesDiv {
@@ -57,7 +57,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
 }
 
 .register {
@@ -100,9 +100,13 @@ body {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  border-top: 5px solid orange;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  color: #53599a;
+  clear: both;
 }
 
 .navbar a {
