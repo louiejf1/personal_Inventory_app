@@ -14,7 +14,7 @@ import moment from "moment"
           <td>{item.invItemName}</td>
           {/* <td>{item.invItemImgUrl}</td> */}
           <td>{item.invItemDescription}</td>
-          <td>{item.important.value}</td>
+          <td>{item.important}</td>
           <td>{moment(item.date).format("MM-DD-YYYY")}</td>
         </tr>)
         

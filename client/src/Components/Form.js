@@ -15,7 +15,7 @@ function Form() {
     invItemName: " ",
     invItemDescription: " ", 
     invItemImgUrl: " ",
-    important: false,
+    important: "",
   })
 console.log(API)
 
@@ -45,9 +45,15 @@ console.log(API)
   const handleChangeImportant = (event) => {
     event.preventDefault();
     const target = event.target;
-    const important = target.name === 'important' ? target.checked : target.value
+    let important = target.name === 'important' ? target.checked : target.value
     console.log(important)
-    setFormObject({ ...formObject, important: important })
+    if (important === true){
+      important = "Yes"
+      setFormObject({ ...formObject, important: important })
+    } else{
+      important = "No"
+      setFormObject({ ...formObject, important: important })
+    }
   }
 
 
@@ -63,7 +69,7 @@ console.log(API)
     console.log("Item has been saved!")
     console.log(formObject)
 
-    API.saveinventoryItem({formObject})
+    API.saveinventoryItem(formObject)
   }
 
 

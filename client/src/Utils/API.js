@@ -16,6 +16,7 @@ export default {
     },
     // // save the item to the database
     saveinventoryItem: function (itemData) {
+        console.log(itemData)
         return axios.post('/api/inventoryItems', itemData)
     },
     updateinventoryItems: function (id) {
