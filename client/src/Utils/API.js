@@ -78,4 +78,5 @@ export default {
     // updatePaperwork: function (id) {
     //     return axios.update('/api/paperwork' + id)
     // }
+
 }

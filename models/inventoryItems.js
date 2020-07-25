@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
 const inventoryItemSchema = new Schema({
+
     invCategory: { type: String, required: true },
     invItemName: { type: String, required: true },
 
@@ -11,6 +13,7 @@ const inventoryItemSchema = new Schema({
     important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }
+
 
 });
 // const inventoryItemsSchema = new Schema({
@@ -86,3 +89,4 @@ module.exports =
 //     paperwork: paperwork,
 //     donations: donations
 // };
+

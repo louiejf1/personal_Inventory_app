@@ -47,6 +47,7 @@ const Navigation = ({ auth: { isAuthenticated, loading }, logout }) => {
               Logout
             </a>
           </li>
+
         </ul>
       </div>
     </nav>
