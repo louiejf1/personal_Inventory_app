@@ -10,11 +10,11 @@ import moment from "moment"
         
             return (
         <tr>
-          <td>{item.invCategory}</td>
+          <th scope="row">{item.invCategory}</th>
           <td>{item.invItemName}</td>
           {/* <td>{item.invItemImgUrl}</td> */}
           <td>{item.invItemDescription}</td>
-          <td>{item.important}</td>
+          <td>{item.important.value}</td>
           <td>{moment(item.date).format("MM-DD-YYYY")}</td>
         </tr>)
         

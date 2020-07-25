@@ -11,6 +11,7 @@ import WishlistAdd from '../Components/WishlistAdd';
 import WishlistHeader from '../Components/WishlistHeader';
 import { TableCloset} from "../Components/Table";
 import API from "../Utils/API.js"
+import Footer from "../Components/Footer"
 
 
 export default function Collectables() {
@@ -28,11 +29,10 @@ const loadCloset = () =>{
 }
 
   return (
+    <div>
     <div className="MainClosetDiv">
       <div className="container-fluid">
         <p className='text-center mb-4'>Upload file Test</p>
-
-        <FileUpload />
         <div>
           <Form />
         </div>
@@ -55,11 +55,13 @@ const loadCloset = () =>{
           </ul> */}
           </div>
         </Provider>
-        <div>
+        <div className="row col-sm-12">
         <TableCloset items={items} category={"collectables"}/>
-        </div>
+       </div>
       </div>
 
+    </div>
+    <Footer/>
     </div>
   );
 }

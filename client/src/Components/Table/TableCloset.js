@@ -8,15 +8,14 @@ export function TableCloset(props) {
     // console.log(items);
 
     return (
-        <table>
-            <thead>
+        <table className="table table-striped">
+            <thead className="thead-dark">
                 <tr>
-                    <th>Category</th>
-                    <th>Item Name</th>
-                    <th>Color</th>
-                    <th>Item Description</th>
-                    <th>Favorite</th>
-                    <th>Date</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Favorite</th>
+                    <th scope="col">Date</th>
                 </tr>
             </thead>
             <tbody>

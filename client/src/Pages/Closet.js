@@ -25,7 +25,7 @@ const loadCloset = () =>{
   
 
   return (
-
+    <div>
     <div className="MainClosetDiv">
       <div className="container-fluid">
         <div className="row">
@@ -34,15 +34,14 @@ const loadCloset = () =>{
             <Weather />
           </div>
         </div>
-        <div>
-          <Button />
-        </div>
+    <div className="row col-sm-12">
   <TableCloset items={items} category={"closet"}/>
         {/* {generateTable(items)} */}
-
+</div>
       </div>
     </div>
-
+    <Footer/>
+</div>
 
   );
 }

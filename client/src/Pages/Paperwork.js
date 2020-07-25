@@ -23,12 +23,9 @@ export default function Paperwork() {
 
     <div className="MainPaperworkDiv">
       <div className="container-fluid">
-        <div>
-          <Button />
-        </div>
-        <div>
+       <div className="row col-sm-12">
         <TableCloset items={items} category={"paperwork"}/>
-        </div>
+       </div>
       </div>
     </div>
 
