@@ -8,6 +8,11 @@ import FileUpload from "./FileUpload";
 // actions and displays
 
 
+
+// use reducer for switch states statements
+// actions and displays
+
+
 function Form() {
   const [formObject, setFormObject] = useState({
     invCategory: " ",
@@ -15,14 +20,24 @@ function Form() {
     invItemDescription: " ",
     important: false,
   })
+<<<<<<< HEAD
   console.log(API)
   const [saveCategory, setSaveCategory] = useState("")
+=======
+console.log(API)
+const [saveCategory, setSaveCategory]=useState("")
+>>>>>>> cc1cfb21cc33a0d51efed4ced838e1efa537cfe2
   // don't need when using checkboxes
   const handleChangeCategory = (event) => {
     event.preventDefault();
     const invCategory = event.target.options[event.target.selectedIndex].text;
+<<<<<<< HEAD
     setFormObject({ ...formObject, invCategory: invCategory })
     console.log(`this is my data ${event.target.value}`)
+=======
+    setFormObject({...formObject, invCategory: invCategory})
+    console.log(`this is my data ${event.target.value}` )
+>>>>>>> cc1cfb21cc33a0d51efed4ced838e1efa537cfe2
     setSaveCategory(event.target.value)
   }
 
@@ -54,7 +69,11 @@ function Form() {
     console.log("Item has been saved!")
     console.log(formObject)
     // console.log(" This is " + categoryData)
+<<<<<<< HEAD
     API[saveCategory]({ formObject })
+=======
+    API[saveCategory]({formObject})
+>>>>>>> cc1cfb21cc33a0d51efed4ced838e1efa537cfe2
   }
 
   const cancelItem = () => {
@@ -90,7 +109,6 @@ function Form() {
                     <input onChange={handleChangeItem} name="invItemName" />
                     <textarea onChange={handleChangeDescription} name="invItemDescription" />
                     <input type="checkbox" onChange={handleChangeImportant} name="important" />
-                    <FileUpload />
                   </div>
                   <div>
                     <Button type="submit" buttonName={"Save"} />
