@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import API from "../Utils/API"
-import Fragment from "./FileUpload"
+import FileUpload from "./FileUpload"
+
 
 
 
@@ -13,18 +14,18 @@ function Form() {
   const [formObject, setFormObject] = useState({
     invCategory: " ",
     invItemName: " ",
-    invItemDescription: " ", 
+    invItemDescription: " ",
     invItemImgUrl: " ",
     important: "",
   })
-console.log(API)
+  console.log(API)
 
   // don't need when using checkboxes
   const handleChangeCategory = (event) => {
     event.preventDefault();
     const invCategory = event.target.options[event.target.selectedIndex].text;
 
-    setFormObject({...formObject, invCategory: invCategory})
+    setFormObject({ ...formObject, invCategory: invCategory })
 
   }
 
@@ -57,24 +58,28 @@ console.log(API)
   }
 
 
-      const fileSave = (event) => {
-        event.preventDefault();
-        const invItemImgUrl = event.target.value;
-        setFormObject({...formObject, invItemImgUrl: invItemImgUrl})  
-    }
+  const fileSave = (event) => {
+    event.preventDefault();
+    const invItemImgUrl = event.target.value;
+    setFormObject({ ...formObject, invItemImgUrl: invItemImgUrl })
+  }
 
-  const handleFormSave = (event)=>{
+  const handleFormSave = (event) => {
 
     event.preventDefault();
     console.log("Item has been saved!")
     console.log(formObject)
 
+<<<<<<< HEAD
     API.saveinventoryItem(formObject)
+=======
+    API.saveinventoryItem({ formObject })
+>>>>>>> 0ff7956e8d9fea07359903135140c4a4349e825a
   }
 
 
-  
-  const cancelItem = ()=>{
+
+  const cancelItem = () => {
 
     // clears all input data and resets the option area and sends user back to 
     // the dashboard page
@@ -88,6 +93,9 @@ console.log(API)
   }
 
   return (
+
+
+
             <div className="card form">
               <h5 className="card-header">Add An Item</h5>
 
@@ -123,6 +131,7 @@ console.log(API)
               </form>
               </div>
             </div>
+
 
   );
 }

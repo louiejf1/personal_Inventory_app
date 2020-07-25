@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const WishlistSchema = new mongoose.Schema({
+const wishlistSchema = new Schema({
     title: String,
     purchased: {
         type: Boolean,
@@ -8,4 +9,6 @@ const WishlistSchema = new mongoose.Schema({
     }
 })
 
-module.exports = Wishlist = mongoose.model('wishlist', WishlistSchema);
+const Wishlist = mongoose.model("Wishlist", wishlistSchema);
+
+module.exports = Wishlist;

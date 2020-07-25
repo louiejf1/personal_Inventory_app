@@ -146,14 +146,6 @@ const inventoryItemsSeed = [
 ]
 
 
-db.inventoryItems
-  .deleteMany({})
-  .then(() => db.inventoryItems.collection.insertMany(inventoryItemsSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+
+
+
