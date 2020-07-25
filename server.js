@@ -2,11 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose"); // Added 7-10-2020
 const path = require("path");
 const config = require('config');
-<<<<<<< HEAD
-=======
 const fileUpload = require('express-fileupload');
 
->>>>>>> master
 // const routes = require("./routes"); // Aadded 7-10-2020
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -30,8 +27,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalinvento
 
 // Add routes, both API and view
 app.use(require('./routes/api'));
-<<<<<<< HEAD
-=======
 app.use(fileUpload());
 
 //Upload Endpoint from React
@@ -51,7 +46,6 @@ app.post('/upload', (req, res) => {
     res.json({ fileName: file.name, filePath: `/uploads/${file.name}` });
   })
 })
->>>>>>> master
 
 app.listen(PORT, function () {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

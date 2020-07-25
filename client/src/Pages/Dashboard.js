@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Footer from "../Components//Footer";
 import Card from "../Components/Card";
 import Search from "../Components/Search";
 import Weather from "../Components/Weather";
@@ -26,6 +25,7 @@ const Dashboard = (props) => {
                 </div>
                 <div class="row"></div>
             </div>
+            <Search />
         </div>
 
 

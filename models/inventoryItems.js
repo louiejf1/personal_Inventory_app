@@ -15,7 +15,6 @@ const closetSchema = new Schema({
     invCategory: { type: String, required: true },
     invItemName: { type: String, required: true },
 
-    color: { type: String, required: true },
     invItemDescription: String,
     invItemImgUrl: String,
 

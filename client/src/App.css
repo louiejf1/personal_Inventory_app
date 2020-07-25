@@ -99,11 +99,11 @@ body {
   text-align: center;
 }
 
-.footer {
+/* .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
+} */
 
 .navbar a {
   color: #53599a !important;
@@ -142,4 +142,8 @@ body {
 /*hide Logout icon */
 .hide-sm {
   display: none;
+}
+
+.navbar.inner {
+  background: transparent;
 }

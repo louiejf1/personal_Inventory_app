@@ -20,30 +20,18 @@
     "nodemon": "^1.19.4"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "bcryptjs": "^2.4.3",
-    "config": "^3.3.1",
-    "express": "^4.16.3",
-=======
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
     "express": "^4.16.3",
     "express-fileupload": "^1.1.7-alpha.4",
->>>>>>> master
     "express-validator": "^6.6.0",
     "gravatar": "^1.8.0",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
-<<<<<<< HEAD
-    "mongoose": "^5.9.25",
-    "react-redux": "^7.2.0",
-    "react-router-dom": "^5.2.0"
-=======
     "mongoose": "^5.9.23",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1"
->>>>>>> master
   }
 }

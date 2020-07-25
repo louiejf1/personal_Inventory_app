@@ -2,14 +2,23 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div>
+    <div style={style}>
       <div className="card footer">
-        <div className="card-header">Footer</div>
+        <div className="card-header">© 2020</div>
         <div className="card-body">
-          <h5 className="card-title">© 2020</h5>
           <p className="card-text">Find your stuff !!!</p>
         </div>
       </div>
     </div>
   );
+}
+
+const style = {
+  width: "100%",
+  borderTop: "5px solid orange",
+  position: "relative",
+  left: "0",
+  bottom: "0",
+  color: "black",
+  clear: "both",
 }
