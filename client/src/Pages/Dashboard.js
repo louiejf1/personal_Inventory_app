@@ -8,7 +8,7 @@ import Form from "../Components/Form"
 // import Reducer from "../Components/Reducer"
 
 const Dashboard = (props) => {
-    return (
+  return (
 
       <div>
     <div>
@@ -32,22 +32,22 @@ const Dashboard = (props) => {
               <h3>Add</h3>
               <Form />
             </div></div> */}
-            <div className="row"><div className="col-sm dashboard-col">
-              <h3>Add</h3>
-              <Form />
-            </div></div>
+          <div className="row"><div className="col-sm dashboard-col">
+            <h3>Add</h3>
+            <Form />
+          </div></div>
 
         </div>
 
         <div className="row"></div>
       </div>
-      
+
     </div>
     <Footer/>
   </div>
 
 
-    );
+  );
 };
 
 Dashboard.propTypes = {};

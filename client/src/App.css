@@ -3,6 +3,22 @@
 
 
 
+.MainLoginDiv {
+  background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.MainRegisterDiv {
+  background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
 .MainHomeDiv {
   background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
   background-size: cover;
@@ -111,7 +127,9 @@ C1EEFF
 }
 
 .footer {
-  position: relative;
+
+  height: 10%;
+
   bottom: 0;
   left:0;
   right: 0;
@@ -133,6 +151,156 @@ C1EEFF
 
 
 .wishlist {
-  max-width: 35rem;
+  max-width: 25rem;
+  /* float: right; */
+}
 
+.reactCalendar {
+  /* background-color: #c1eeff;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* Register card component */
+#registerForm {
+  background-color: #dbf5ff;
+  width: 55%;
+  min-width: 450px;
+  height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  margin-top: -50px;
+}
+
+.text-primary registerTitle {
+  color: #53599a;
+}
+
+.lead.registerTitle {
+  color: black;
+}
+
+/* Login card component */
+#loginForm {
+  background-color: #dbf5ff;
+  width: 55%;
+  min-width: 450px;
+  height: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.loginForm {
+  margin-top: 5%;
+}
+
+/* Google card component */
+#googleForm {
+  background-color: #dbf5ff;
+  width: 600px;
+  min-width: 450px;
+  height: 620px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  padding-bottom: 25px;
+}
+
+/* Google card component */
+#formBackupForm {
+  background-color: whitesmoke;
+  width: 100%;
+  min-width: 350px;
+  height: 335x;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  padding-bottom: 25px;
+}
+
+/* Weather card component */
+.WeatherCard {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/thunderstorm-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.WeatherCard.warm {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/sun-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.WeatherCard.snow {
+  width: 250px;
+  height: 300px;
+  background-image: url(./Images/weather/snow-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.WeatherCard.rain {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/sun-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.WeatherContent {
+  min-height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.75)
+  );
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.location {
+  margin-top: 20px;
+}
+.date {
+  margin-top: 10px;
+}
+.condition {
+  padding-bottom: 10px;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  background-color: rgba(142, 197, 235, 0.5);
+  border-radius: 10px;
+  padding: 10px;
 }

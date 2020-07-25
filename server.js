@@ -32,15 +32,10 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalinventory"); // Aadded 7-10-2020
 
 // Add routes, both API and view
-<<<<<<< HEAD
-app.use(routes)
-app.use("/inventory",inventoryItems)
-=======
 
 app.use(routes);
 
 app.use(require('./routes/api'));
->>>>>>> 438d44448a19f3cc0f855452113895e8613790bb
 
 app.use(fileUpload());
 

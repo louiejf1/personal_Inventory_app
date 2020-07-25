@@ -32,14 +32,18 @@ const LoginForm = ({ login, isAuthenticated }) => {
 
     return (
         <Fragment>
-            <section className="container">
-                <h1 className="large text-primary">Sign In</h1>
-                <p className="lead"><i className="fas fa-user"></i> Sign Into Your Account</p>
-                <form className="form" onSubmit={event => onSubmit(event)}>
-                    <input type="email" placeholder="Email Address" name="email" value={email} onChange={event => onChange(event)} required />
 
-                    <div className="form-group">
-                        <input
+            <section className="container" id="loginForm">
+                <h1 className="large">Sign In</h1>
+                <p className="lead registerTitle"><i className="fas fa-user"></i> Sign Into Your Account</p>
+
+                <form className="form loginForm" onSubmit={event => onSubmit(event)}>
+
+                    <div className="form-group col-md-8 mt-7" >
+                        <input className="form-control" type="email" placeholder="Email Address" name="email" value={email} onChange={event => onChange(event)} required />
+                    </div>
+                    <div className="form-group col-md-8">
+                        <input className="form-control"
                             type="password"
                             placeholder="Password"
                             value={password} onChange={event => onChange(event)}
@@ -49,10 +53,13 @@ const LoginForm = ({ login, isAuthenticated }) => {
                     </div>
                     <input type="submit" className="btn btn-primary" value="Submit" />
                 </form>
-                <p className="subtext">
+                <p className="subtext" style={{ textAlign: "center" }} >
                     Don't have an account? <a href="/register">Register Here</a>
                 </p>
             </section>
+
+
+
 
         </Fragment>
 
