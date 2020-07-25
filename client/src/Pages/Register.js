@@ -9,7 +9,11 @@ export default function Register() {
     return (
         <div>
             <RegisterForm />
+<<<<<<< HEAD
+            <Footer />
+=======
 
+>>>>>>> master
         </div>
     )
 }

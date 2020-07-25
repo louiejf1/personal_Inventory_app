@@ -8,7 +8,8 @@ import Form from "../Components/Form"
 // import Reducer from "../Components/Reducer"
 
 const Dashboard = (props) => {
-  return (
+    return (
+
 
     <div>
       <div className="container-fluid dashboard">
@@ -35,13 +36,11 @@ const Dashboard = (props) => {
               <h3>Add</h3>
               <Form />
             </div></div>
+
         </div>
-        <div class="row"></div>
-      </div>
-    </div>
 
 
-  );
+    );
 };
 
 Dashboard.propTypes = {};

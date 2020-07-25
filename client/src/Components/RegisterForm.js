@@ -66,10 +66,17 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
                     </div>
                     <div className="form-group">
                         <input type="email" placeholder="Email Address" name="email" value={email} onChange={event => onChange(event)} />
+<<<<<<< HEAD
+                        <small className="form-text"
+                        >(This site uses Gravatar so if you want a profile image, use a
+            Gravatar email)</small
+                        >
+=======
                         {/* <small className="form-text"
                         >(This site uses Gravatar so if you want a profile image, use a
             Gravatar email)</small
                         > */}
+>>>>>>> master
                     </div>
                     <div className="form-group">
                         <input

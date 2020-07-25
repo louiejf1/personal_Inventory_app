@@ -117,3 +117,29 @@ body {
   align-items: center;
   text-align: center;
 }
+
+.register-inner {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+/*hide Logout icon */
+.hide-sm {
+  display: none;
+}
