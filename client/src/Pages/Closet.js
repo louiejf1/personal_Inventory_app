@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "../Components/Footer";
-import Button from "../Components/Button";
 import Items from "../Components/ItemInfo";
-import Weather from "../Components/Weather";
+import Weather from "../Components//layout/Weather/Weather";
 
 export default function Closet() {
   return (
@@ -13,9 +12,12 @@ export default function Closet() {
             <div class="col-sm dashboard-col">
               <Weather />
             </div>
-          </div>
-          <div>
-            <Button />
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
           </div>
           <div>
             <Items />

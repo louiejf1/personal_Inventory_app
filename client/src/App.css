@@ -121,3 +121,91 @@ body {
   align-items: center;
   text-align: center;
 }
+
+/* Weather card component */
+.WeatherCard {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/thunderstorm-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.WeatherCard.warm {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/sun-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.WeatherCard.snow {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/snow-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.WeatherCard.rain {
+  width: 200px;
+  height: 300px;
+  background-image: url(./Images/weather/rain-small.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.WeatherContent {
+  min-height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.75)
+  );
+  border-radius: 10px;
+}
+
+.location {
+  margin-top: 10px;
+}
+
+.date {
+  margin-top: 10px;
+}
+
+.condition {
+  padding-bottom: 10px;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  background-color: rgba(142, 197, 235, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
