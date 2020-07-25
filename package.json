@@ -29,6 +29,7 @@
     "gravatar": "^1.8.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
     "mongoose": "^5.9.23",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
