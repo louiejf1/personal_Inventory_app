@@ -39,6 +39,11 @@ const Dashboard = (props) => {
 
         </div>
 
+        <div className="row"></div>
+      </div>
+    </div>
+
+
 
     );
 };
