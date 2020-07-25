@@ -4,7 +4,7 @@ const inventoryItemsController = require("../../controllers/inventoryItemsContro
 // Matches with "/api/inventoryItems"
 router.route("/")
   .get(inventoryItemsController.findAll)
-  .post(inventoryItemsController.create);
+.post(inventoryItemsController.create);
 
 // Matches with "/api/inventoryItems/:id"
 router

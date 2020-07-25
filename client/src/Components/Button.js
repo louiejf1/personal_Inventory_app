@@ -5,7 +5,7 @@ export default function Button(props) {
     <div>
       <div className="btn-group" role="group" aria-label="Basic example">
 
-        <button type="button" className="btn">
+        <button type="submit" className="btn">
 
           {props.buttonName}
         </button>

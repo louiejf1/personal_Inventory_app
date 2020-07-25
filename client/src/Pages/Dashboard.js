@@ -3,30 +3,45 @@ import PropTypes from "prop-types";
 import Card from "../Components/Card";
 import Search from "../Components/Search";
 import Weather from "../Components/Weather";
+import Form from "../Components/Form"
+// import Reducer from "../Components/Reducer"
 
 const Dashboard = (props) => {
     return (
 
-        <div class="container-fluid dashboard">
-            <div class="col">
-                <div class="row">
-                    <div class="col-sm dashboard-col">
-                        <h3> Go To Closet</h3>
-                        <Card />
+
+        <div>
+            <div className="container-fluid dashboard">
+                <div className="col">
+                    <div className="row">
+                        <div className="col-sm dashboard-col">
+                            <h3> Go To Closet</h3>
+                            <Card />
+                        </div>
+                        <div className="col-sm dashboard-col">
+                            <h3>Go To Collectables</h3>
+                            <Card />
+                        </div>
+                        <div className="col-sm dashboard-col">
+                            <h3>Go To Paperwork</h3>
+                            <Card />
+                        </div>
                     </div>
-                    <div class="col-sm dashboard-col">
-                        <h3>Go To Collectables</h3>
-                        <Card />
-                    </div>
-                    <div class="col-sm dashboard-col">
-                        <h3>Go To Paperwork</h3>
-                        <Card />
-                    </div>
+                    {/* <div className="row"><div className="col-sm dashboard-col">
+              <h3>Add</h3>
+              <Form />
+            </div></div> */}
+                    <div className="row"><div className="col-sm dashboard-col">
+                        <h3>Add</h3>
+                        <Form />
+                    </div></div>
+
                 </div>
-                <div class="row"></div>
+
+                <div className="row"></div>
             </div>
-            <Search />
         </div>
+
 
 
     );

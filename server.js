@@ -1,8 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose"); // Added 7-10-2020
+const routes = require("./routes");
 const path = require("path");
 const config = require('config');
+
 const fileUpload = require('express-fileupload');
+
 
 // const routes = require("./routes"); // Aadded 7-10-2020
 const PORT = process.env.PORT || 3001;
@@ -26,6 +29,9 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/personalinventory"); // Aadded 7-10-2020
 
 // Add routes, both API and view
+
+app.use(routes);
+
 app.use(require('./routes/api'));
 app.use(fileUpload());
 

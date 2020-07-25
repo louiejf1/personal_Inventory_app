@@ -5,6 +5,14 @@ import { setAlert } from '../actions/alert';
 import { register } from '../actions/auth';
 
 import PropTypes from 'prop-types';
+import API from "../Utils/API";
+
+function loadItems() {
+    API.getinventoryItems()
+        .then(res =>
+            console.log(res.data)
+        )
+}
 
 //import axios from 'axios';
 
@@ -94,6 +102,8 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
                 <p className="subtext">
                     Already have an account? <a href="/login">Sign In</a>
                 </p>
+                <button onClick={loadItems}>API TEST</button>
+
             </section>
 
         </Fragment>
