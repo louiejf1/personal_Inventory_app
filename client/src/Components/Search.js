@@ -1,21 +1,31 @@
-import React, { useState, Component, useEffect } from 'react';
+import React, { useState } from 'react';
+import Button from "./Button";
+import API from '../Utils/API';
 
-export class Search extends Component {
+export default function Search() {
+    const [search, setSearch] = useState({
+        search: ""
+    });
 
-    render() {
-        return (
-            <div>
-                <input
-                    type="search"
-                    name="title"
-                    style={{ flex: '10', padding: '5px' }}
-                    placeholder="Search for an item..."
-                    value={this.state.title}
-                    onChange={this.onChange}
-                />
-            </div>
-        )
+    const handleInputChange = (event) => {
+        event.preventDefault();
+        const inputSearch = event.target.value;
+        console.log(inputSearch)
+        setSearch({ ...search, search: inputSearch })
     }
+
+    function searchItem() = {
+        let id = data;
+        API.getInventoryItem(id)
+    }
+
+    return (
+        <div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange={handleInputChange} />
+                <Button class="btn btn-outline-success my-2 my-sm-0" type="submit" buttonName={"search"}></Button>
+            </form>
+        </div>
+    )
 }
 
-export default Search
