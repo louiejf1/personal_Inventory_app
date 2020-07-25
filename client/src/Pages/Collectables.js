@@ -61,7 +61,7 @@ export default function Collectables() {
             </div>
           </Provider>
           <div>
-            <TableCloset items={items} category={"collectables"} />
+            <TableCloset items={items} category={"Collectables"} />
           </div>
 
         </div>

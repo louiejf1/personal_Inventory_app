@@ -5,7 +5,7 @@ import { setAlert } from '../actions/alert';
 import { register } from '../actions/auth';
 
 import PropTypes from 'prop-types';
-import API from "../Utils/API";
+// import API from "../Utils/API";
 
 // For testint API Route
 // function loadItems() {

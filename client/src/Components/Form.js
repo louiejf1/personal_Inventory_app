@@ -70,11 +70,7 @@ function Form() {
     console.log("Item has been saved!")
     console.log(formObject)
 
-<<<<<<< HEAD
     API.saveinventoryItem(formObject)
-=======
-    API.saveinventoryItem({ formObject })
->>>>>>> 0ff7956e8d9fea07359903135140c4a4349e825a
   }
 
 
@@ -122,7 +118,7 @@ function Form() {
                  <br/>
                   <p className="card-text">Is this an important item?</p>
                   <input className="checkbox-inline" type="checkbox" onChange={handleChangeImportant} name="important" />
-                  <Fragment onChange={fileSave}/>
+                  <FileUpload onChange={fileSave}/>
                 </div>
                 <div className="btn-group">
                   <Button type="submit" href="./dashboard" buttonName={"Save"}/>  
