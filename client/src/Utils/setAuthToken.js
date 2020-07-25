@@ -8,5 +8,5 @@ const setAuthToken = token => {
         delete axios.defaults.headers.common['x-auth-token']
     }
 }
-
+console.log(setAuthToken)
 export default setAuthToken;
