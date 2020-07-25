@@ -3,54 +3,46 @@ import Footer from "../Components/Footer";
 import Button from "../Components/Button";
 import Items from "../Components/ItemInfo";
 import Weather from "../Components/Weather";
-import TableCloset from "../Components/TableCloset";
+import { TableCloset} from "../Components/Table";
 import API from "../Utils/API.js"
 import axios from "axios"
 
+
 export default function Closet() {
-  // const [item, setItem] = useState({});
-  // useEffect(() => { API.getClosets().then(item => { setItem(item.data) }) })
-const [data, setData] = useState({items:[]});
+  const[items,setItems]=useState([]);
+
 useEffect(()=>{
-  const res = async function () {
-    return await axios.get('https://cors-anywhere.herokuapp.com/https://localhost:3001/inventoryItems', { headers: {'Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept'} });
+  loadCloset()
+},[])
 
-  setData(res.data)
-  })
- /* axios.get(URL, { headers: { Authorization: AuthStr } })
-  .then(response => {
-      // If request is good...
-      console.log(response.data);
-   })
-  .catch((error) => {
-      console.log('error ' + error);
-   });*/
+const loadCloset = () =>{
+  API.getinventoryItems()
+  .then(res=>{ return setItems(res.data)})
+  // need to filter either the API call or the data res to only display closet items
+}
 
-.then( console.log(data=>data,"STRING"));
- /* fetch("http://cors-anywhere.herokuapp.com/http://localhost:3001/inventoryItems")
-  .then(res=>res.json)
-  .then(data=>console.log('data', data))
-*/
- // console.log(API.getInventoryItems());
+
+    
+  
+
   return (
-
+    <div>
     <div className="MainClosetDiv">
       <div className="container-fluid">
-        <div class="row">
-          <div class="col-sm dashboard-col">
+        <div className="row">
+          <div className="col-sm dashboard-col">
             <h3>Weather data card(s)</h3>
             <Weather />
           </div>
         </div>
-        <div>
-          <Button />
-        </div>
-        <div>
-        <TableCloset />
-       </div>  
+    <div className="row col-sm-12">
+  <TableCloset items={items} category={"closet"}/>
+        {/* {generateTable(items)} */}
+</div>
       </div>
     </div>
-
+    <Footer/>
+</div>
 
   );
 }

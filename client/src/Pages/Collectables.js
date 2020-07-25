@@ -9,25 +9,30 @@ import Axios from 'axios';
 import { Provider } from "../Components/wishlistContext";
 import WishlistAdd from '../Components/WishlistAdd';
 import WishlistHeader from '../Components/WishlistHeader';
+import { TableCloset} from "../Components/Table";
+import API from "../Utils/API.js"
+import Footer from "../Components/Footer"
+
 
 export default function Collectables() {
 
-  const [data, getData] = useState([]);
-  const [todos, setTodos] = useState([])
+  const[items,setItems]=useState([]);
 
-  // useEffect(() => (
-  //   Axios.get('https://jsonplaceholder.typicode.com/todos')
-  // )
-  //   .then(result => getData(result.data))
+useEffect(()=>{
+  loadCloset()
+},[])
 
-  //   , [])
+const loadCloset = () =>{
+  API.getinventoryItems()
+  .then(res=>{ return setItems(res.data)})
+  // need to filter either the API call or the data res to only display closet items
+}
 
   return (
+    <div>
     <div className="MainClosetDiv">
       <div className="container-fluid">
         <p className='text-center mb-4'>Upload file Test</p>
-
-        <FileUpload />
         <div>
           <Form />
         </div>
@@ -50,11 +55,13 @@ export default function Collectables() {
           </ul> */}
           </div>
         </Provider>
-        <div>
-          <TableCollectibles />
-        </div>
+        <div className="row col-sm-12">
+        <TableCloset items={items} category={"collectables"}/>
+       </div>
       </div>
 
+    </div>
+    <Footer/>
     </div>
   );
 }

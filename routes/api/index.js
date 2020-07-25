@@ -4,7 +4,6 @@ const usersRoute = require("./users");
 const authRoute = require("./auth");
 const wishlistRoute = require("./wishlist");
 
-
 // routes
 router.use("/inventoryItems", inventoryItemRoutes);
 router.use("/api/users", usersRoute);

@@ -1,31 +1,39 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: 'Nunito', sans-serif;
-  background-color: #e8e9ed;
-  color: #53599a;
-}
+
 
 .MainHomeDiv {
   background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
+  position:fixed;
+  padding-bottom: 50px;
+  height: 100%;
 }
+
+.btn{
+  color: #fff;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #c1eeff;
+}
+
+/* 0A090C
+C1EEFF
+53599A */
 
 .MainClosetDiv {
   background-image: url(./Images/grayscale-photography-of-assorted-apparels-on-shelf-rack-1884581.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
-  height: 100vh;
+  /* position:fixed; */
+  /* position: absolute; */
+  padding-bottom: 50px;
+  height: 100%;
 }
 
 .MainPaperworkDiv {
@@ -33,8 +41,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
-  height: 100vh;
+  /* position: absolute; */
+  padding-bottom: 50px;
+  /* position:fixed; */
+  height: 100%;
 }
 
 .mainFormDiv {
@@ -48,7 +58,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
 }
 
 .MainCollectablesDiv {
@@ -77,13 +87,14 @@ body {
 
 .lead {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+ margin-bottom: 1rem;
 }
 
 .alert-danger {
   background: var(--danger-color);
   color: #fff;
 }
+
 
 /*hide Logout icon */
 .hide-sm {
@@ -100,8 +111,10 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
+  left:0;
+  right: 0;
   width: 100%;
 }
 
@@ -114,10 +127,12 @@ body {
 }
 
 .card {
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
+
 
 .wishlist {
   max-width: 35rem;
+
 }

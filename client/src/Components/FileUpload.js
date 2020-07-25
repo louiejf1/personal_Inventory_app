@@ -3,7 +3,7 @@ import Message from './Message';
 import axios from 'axios';
 
 
-const FileUpload = () => {
+const FileUpload = (props) => {
     const [file, setFile] = useState('');
     const [filename, setFilename] = useState('Choose File');
     const [uploadedFile, setUploadedFile] = useState({});
@@ -55,9 +55,9 @@ const FileUpload = () => {
 
             </form>
             {uploadedFile ? (<div className="row mt-5">
-                <div className="col-md-6 m-auto">
+                <div className="col-lg m-auto">
                     <h3 className="text-center">{uploadedFile.fileName}</h3>
-                    <img style={{ width: '30%' }} src={uploadedFile.filePath} alt='' />
+                    <img style={{ width: '100%', height: '100%' }} src={uploadedFile.filePath} alt='' />
                 </div>
             </div>) : null}
         </Fragment>
