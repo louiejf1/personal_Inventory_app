@@ -48,7 +48,7 @@ const App = () => {
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
           </Switch>
         </Router>
-        <Footer />
+        {/* <Footer /> */}
       </React.Fragment>
 
     </Provider >

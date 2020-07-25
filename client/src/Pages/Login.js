@@ -8,7 +8,6 @@ export default function Register() {
     return (
         <div className="MainLoginDiv">
             <LoginForm />
-
         </div>
     )
 }

@@ -39,10 +39,10 @@ const LoginForm = ({ login, isAuthenticated }) => {
 
                 <form className="form loginForm" onSubmit={event => onSubmit(event)}>
 
-                    <div class="form-group col-md-8 mt-7" >
+                    <div className="form-group col-md-8 mt-7" >
                         <input className="form-control" type="email" placeholder="Email Address" name="email" value={email} onChange={event => onChange(event)} required />
                     </div>
-                    <div class="form-group col-md-8">
+                    <div className="form-group col-md-8">
                         <input className="form-control"
                             type="password"
                             placeholder="Password"

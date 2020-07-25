@@ -11,19 +11,25 @@ import WishlistAdd from '../Components/WishlistAdd';
 import WishlistHeader from '../Components/WishlistHeader';
 import API from '../Utils/API';
 import TaskManager from '../Components/TaskManager/TaskManager';
+import { TableCloset } from "../Components/Table";
+
 
 
 export default function Collectables() {
 
   const [data, getData] = useState([]);
 
+  const [items, setItems] = useState([]);
 
-  // useEffect(() => (
-  //   Axios.get('https://jsonplaceholder.typicode.com/todos')
-  // )
-  //   .then(result => getData(result.data))
+  useEffect(() => {
+    loadCloset()
+  }, [])
 
-  //   , [])
+  const loadCloset = () => {
+    API.getinventoryItems()
+      .then(res => { return setItems(res.data) })
+    // need to filter either the API call or the data res to only display closet items
+  }
 
 
 
@@ -46,13 +52,17 @@ export default function Collectables() {
 
 
 
+
+
+            <div>
+              <TableCollectibles />
+            </div>
           </Provider>
           <div>
-            <TableCollectibles />
+            <TableCloset items={items} category={"collectables"} />
           </div>
-        </div>
 
-      </div>
-    </div >
+        </div>
+      </div > </div >
   );
 }
