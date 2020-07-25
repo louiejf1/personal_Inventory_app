@@ -4,13 +4,13 @@ import Footer from "../Components//Footer";
 import Card from "../Components/Card";
 import Search from "../Components/Search";
 import Weather from "../Components/Weather";
-// import Form from "../Components/Form"
-import Reducer from "../Components/Reducer"
+import Form from "../Components/Form"
+// import Reducer from "../Components/Reducer"
 
 const Dashboard = (props) => {
   return (
 
-    <>
+    <div>
       <div className="container-fluid dashboard">
         <div className="col">
           <div className="row">
@@ -33,10 +33,10 @@ const Dashboard = (props) => {
             </div></div> */}
             <div className="row"><div className="col-sm dashboard-col">
               <h3>Add</h3>
-              <Reducer />
+              <Form />
             </div></div>
         </div>
-        <div class="row"></div>
+        <div className="row"></div>
       </div>
     </div>
 

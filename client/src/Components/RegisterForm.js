@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import API from "../Utils/API";
 
 function loadItems() {
-    API.getInventoryItems()
+    API.getinventoryItems()
         .then(res =>
             console.log(res.data)
         )
