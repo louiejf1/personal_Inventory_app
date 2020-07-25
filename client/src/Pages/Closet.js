@@ -25,7 +25,7 @@ export default function Closet() {
 
 
   return (
-
+    <div>
     <div className="MainClosetDiv">
       <div className="container-fluid">
         <div class="row">
@@ -39,15 +39,16 @@ export default function Closet() {
             <Weather />
           </div>
         </div>
-        <div>
-          <Button />
-        </div>
-        <TableCloset items={items} category={"closet"} />
-        {/* {generateTable(items)} */}
 
+    <div className="row col-sm-12">
+  <TableCloset items={items} category={"closet"}/>
+
+        {/* {generateTable(items)} */}
+</div>
       </div>
     </div>
-
+    <Footer/>
+</div>
 
   );
 }

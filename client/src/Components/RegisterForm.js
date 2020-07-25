@@ -74,6 +74,7 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
 
                         <input className="form-control" type="text" placeholder="Name" name="name" value={name} onChange={event => onChange(event)} />
                     </div>
+
                     <div class="form-group col-md-8">
 
 
@@ -86,6 +87,7 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
 
                     <div class="form-group col-md-8">
                         <input className="form-control"
+
                             type="password"
                             placeholder="Password"
                             value={password} onChange={event => onChange(event)}

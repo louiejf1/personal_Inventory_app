@@ -30,6 +30,7 @@ export default function Paperwork() {
       <div className="container-fluid">
 
 
+
         <div>
           {/* <FormBackup /> */}
           <Form />
@@ -46,9 +47,11 @@ export default function Paperwork() {
 
 
 
-        <div>
-          <TableCloset items={items} category={"paperwork"} />
-        </div>
+      
+       <div className="row col-sm-12">
+        <TableCloset items={items} category={"paperwork"}/>
+       </div>
+
       </div>
     </div>
 

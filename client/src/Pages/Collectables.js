@@ -15,6 +15,7 @@ import { TableCloset } from "../Components/Table";
 
 
 
+
 export default function Collectables() {
 
   const [data, getData] = useState([]);
@@ -34,6 +35,7 @@ export default function Collectables() {
 
 
   return (
+
 
     <div className="MainClosetDiv">
       <div className="col-md-12" style={{ justifyItems: "center" }}>
@@ -64,5 +66,7 @@ export default function Collectables() {
 
         </div>
       </div > </div >
+
+  
   );
 }

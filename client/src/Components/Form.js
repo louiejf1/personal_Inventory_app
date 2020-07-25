@@ -83,42 +83,45 @@ function Form() {
   }
 
   return (
-    <div className="card">
-      <h5 className="card-header">Add An Item</h5>
-
-      <div className="card-body">
-
-        <form onSubmit={(event) => handleFormSave(event)}>
-          <div>
-            {/* use checkboxes (use for ref) */}
-
-            <select onChange={handleChangeCategory} name="invCategory">
-              <option value=" ">None</option>
-              <option value="saveCloset">Closet</option>
-              <option value="saveCollectibles">Collectibles</option>
-              <option value="savePaperwork">Paperwork</option>
-              <option value="saveDonation">Donations</option>
-
-            </select>
-            <p className="card-text">Item Name</p>
-            <input onChange={handleChangeItem} name="invItemName" />
-            <p className="card-text">Item Description</p>
-            <textarea onChange={handleChangeDescription} name="invItemDescription" />
-            <p className="card-text">Is this an important item?</p>
-            <input type="checkbox" onChange={handleChangeImportant} name="important" />
-            <FileUpload onChange={fileSave} />
-          </div>
-          <div>
-            <Button type="submit" href="./dashboard" buttonName={"Save"} />
-          </div>
-          <div>
-            <Button onClick={cancelItem} buttonName={"Cancel"} />
 
 
-          </div>
-        </form>
-      </div>
-    </div>
+
+            <div className="card form">
+              <h5 className="card-header">Add An Item</h5>
+
+              <div className="card-body">
+              
+              <form onSubmit={(event)=> handleFormSave(event)}>
+                <div className="form-group">
+                  {/* use checkboxes (use for ref) */}
+                  <label for="sell">Select Category:</label>
+                  <select id="sell" className="form-control" onChange= {handleChangeCategory} name="invCategory">
+                    <option >None</option>
+                    <option >Closet</option>
+                    <option >Collectibles</option>
+                    <option >Paperwork</option>
+                    <option >Donations</option>
+
+                  </select>
+                  <br/>
+                  <label for="name">Item Name:</label>
+                  <input id="name" className="form-control" onChange= {handleChangeItem} placeholder="Item name..." name="invItemName"/>
+                  <br/>
+                  <label for="comment">Item Description:</label>
+                  <textarea id="comment"className="form-control" placeholder="Item description..." onChange= {handleChangeDescription} rows="10" name="invItemDescription"/>
+                 <br/>
+                  <p className="card-text">Is this an important item?</p>
+                  <input className="checkbox-inline" type="checkbox" onChange={handleChangeImportant} name="important" />
+                  <Fragment onChange={fileSave}/>
+                </div>
+                <div className="btn-group">
+                  <Button type="submit" href="./dashboard" buttonName={"Save"}/>  
+                  <Button onClick={cancelItem} buttonName={"Cancel"}/>
+                </div>
+              </form>
+              </div>
+            </div>
+
 
   );
 }
