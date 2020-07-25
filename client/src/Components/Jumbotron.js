@@ -15,8 +15,8 @@ const Wrapper = styled.section`
 export default function Jumbotron() {
   return (
     <Wrapper>
-      <h1>Personal Inventory Assistant</h1>
-      <p>Welcome, let PIA help you get organized</p>
+      <h1>Hello, I am PIA</h1>
+      <p>Your Personal Inventory Assistant. Let me help you get organized.</p>
     </Wrapper>
   );
 }

@@ -42,7 +42,7 @@ export default function Closet() {
         <div>
           <Button />
         </div>
-        <TableCloset items={items} category={"closet"} />
+        <TableCloset items={items} category={"Closet"} />
         {/* {generateTable(items)} */}
 
       </div>

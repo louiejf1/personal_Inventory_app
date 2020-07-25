@@ -47,7 +47,7 @@ export default function Paperwork() {
 
 
         <div>
-          <TableCloset items={items} category={"paperwork"} />
+          <TableCloset items={items} category={"Paperwork"} />
         </div>
       </div>
     </div>

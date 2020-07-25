@@ -10,6 +10,12 @@ body {
   background-color: #e8e9ed;
   color: #53599a;
 }
+.dashboardDiv {
+  background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .MainLoginDiv {
   background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
@@ -133,7 +139,6 @@ body {
   align-items: center;
   text-align: center;
 }
-
 
 .wishlist {
   max-width: 25rem;
