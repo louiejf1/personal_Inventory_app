@@ -1,47 +1,123 @@
-.App {
-  text-align: center;
-}
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  background-color: #e8e9ed;
+  color: #53599a;
 }
 
 .MainHomeDiv {
-  background-image: url(./Images/closetWhite.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
 }
 
-.jumbotron {
-  align-items: center;
-  text-align: center;
-  color: white;
+.MainClosetDiv {
+  background-image: url(./Images/grayscale-photography-of-assorted-apparels-on-shelf-rack-1884581.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 100vh;
+}
+
+.MainPaperworkDiv {
+  background-image: url(./Images/woman-looking-at-folders-3791159.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 100vh;
 }
 
 .mainFormDiv {
   align-items: center;
   text-align: center;
+  margin: 0 auto;
+}
+
+.dashboard {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 100vh;
+}
+
+.MainCollectablesDiv {
+  background-image: url(./Images/vintage-music-antique-radio-9295.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 100vh;
 }
 
 .register {
   height: 450px;
+}
+
+.register-inner {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+/*hide Logout icon */
+.hide-sm {
+  display: none;
+}
+
+/* Dashboard Page */
+.dashboard-col {
+  margin: 5px;
+}
+
+.dashboard-col h3 {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  color: #53599a !important;
+}
+
+.btn {
+  background: #53599a !important;
+}
+
+.card {
+  align-items: center;
+  text-align: center;
+}
+
+.wishlist {
+  max-width: 35rem;
 }

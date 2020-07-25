@@ -1,11 +1,15 @@
 import React from 'react'
-import Form from "../Components/Form"
+import RegisterForm from "../Components/RegisterForm"
+import Footer from "../Components/Footer"
+
 
 
 export default function Register() {
+
     return (
         <div>
-            <Form />
+            <RegisterForm />
+
         </div>
     )
 }
