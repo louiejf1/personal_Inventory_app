@@ -1,12 +1,12 @@
 /* Global Styles */
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #e8e9ed;
   color: #53599a;
 }
@@ -118,28 +118,8 @@ body {
   text-align: center;
 }
 
-.register-inner {
-  height: 100%;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.lead {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
+.wishlist {
+  max-width: 35rem;
 
-.alert-danger {
-  background: var(--danger-color);
-  color: #fff;
-}
-
-/*hide Logout icon */
-.hide-sm {
-  display: none;
 }

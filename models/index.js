@@ -1,4 +1,4 @@
 module.exports = {
-    inventoryItems: require("./inventoryItems")
-  };
-  
+  inventoryItems: require("./inventoryItems"),
+  users: require("./User")
+};
