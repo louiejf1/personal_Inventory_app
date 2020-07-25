@@ -8,8 +8,6 @@ const inventoryItemSchema = new Schema({
     //color: { type: String, required: true },
     invItemDescription: String,
     invItemImgUrl: String,
-
-    invItemDescription: String,
     important: { type: Boolean, default: false },
 
     date: { type: Date, default: Date.now }

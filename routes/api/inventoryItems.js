@@ -4,13 +4,13 @@ const inventoryItemsController = require("../../controllers/inventoryItemsContro
 // Matches with "/api/inventoryItems"
 router.route("/")
   .get(inventoryItemsController.findAll)
-//.post(inventoryItemsController.create);
+.post(inventoryItemsController.create);
 
 // Matches with "/api/inventoryItems/:id"
-// router
-//   .route("/:id")
-//   .get(inventoryItemsController.findById)
-//   .put(inventoryItemsController.update)
-//   .delete(inventoryItemsController.remove);
+router
+  .route("/:id")
+  .get(inventoryItemsController.findById)
+  .put(inventoryItemsController.update)
+  .delete(inventoryItemsController.remove);
 
 module.exports = router;
