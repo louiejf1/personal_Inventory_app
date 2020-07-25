@@ -6,7 +6,7 @@ import Footer from "../Components/Footer"
 
 export default function Register() {
     return (
-        <div>
+        <div className="MainLoginDiv">
             <LoginForm />
 
         </div>

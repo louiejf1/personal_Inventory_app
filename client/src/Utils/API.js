@@ -4,7 +4,7 @@ export default {
     // get all items from array
     getInventoryItems: function () {
         return axios.get('/api/inventoryItems');
-    }
+    },
     // // get item from array with the given id
     // getCloset: function (id) {
     //     return axios.get('/api/closets' + id)
@@ -77,4 +77,19 @@ export default {
     // updatePaperwork: function (id) {
     //     return axios.update('/api/paperwork' + id)
     // }
+
+    // Wishlist API
+    getWishlists: function () {
+        return axios.get('/api/wishlists');
+    },
+    // Wishlist item with given ID
+    getWishlists: function (id) {
+        return axios.get('/api/wishlists/' + id);
+    },
+    deleteWishlist: function (id) {
+        return axios.delete('/api/wishlists' + id);
+    },
+    saveWishlist: function (wishlistData) {
+        return axios.get('/api/wishlists', wishlistData);
+    },
 }

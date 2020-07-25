@@ -9,11 +9,14 @@ import Axios from 'axios';
 import { Provider } from "../Components/wishlistContext";
 import WishlistAdd from '../Components/WishlistAdd';
 import WishlistHeader from '../Components/WishlistHeader';
+import API from '../Utils/API';
+import TaskManager from '../Components/TaskManager/TaskManager';
+
 
 export default function Collectables() {
 
   const [data, getData] = useState([]);
-  const [todos, setTodos] = useState([])
+
 
   // useEffect(() => (
   //   Axios.get('https://jsonplaceholder.typicode.com/todos')
@@ -22,39 +25,34 @@ export default function Collectables() {
 
   //   , [])
 
+
+
   return (
+
     <div className="MainClosetDiv">
-      <div className="container-fluid">
-        <p className='text-center mb-4'>Upload file Test</p>
+      <div className="col-md-12" style={{ justifyItems: "center" }}>
+        <div className="container-fluid">
+          <Provider>
 
-        <FileUpload />
-        <div>
-          <Form />
-        </div>
-        <Provider>
-          <div className="wishlist">
-            <WishlistHeader />
-            <WishlistAdd />
-            <Wishlist />
+            <div classname="wishlist" style={{ paddingLeft: "20px" }}>
+              <div style={{ float: "left", paddingTop: "35px", margin: "30px" }}>
+                <Form />
+              </div>
+              <div style={{ float: "left", margin: "30px", paddingBottom: "30px" }}>
+                <TaskManager />
+              </div>
+
+            </div>
 
 
-            {/* //API place holder
-          <ul>
-            {
-              data.map(todo => (
-                <li key={todo.id}>
-                  {todo.title}
-                </li>
-              ))
-            }
-          </ul> */}
+
+          </Provider>
+          <div>
+            <TableCollectibles />
           </div>
-        </Provider>
-        <div>
-          <TableCollectibles />
         </div>
-      </div>
 
-    </div>
+      </div>
+    </div >
   );
 }

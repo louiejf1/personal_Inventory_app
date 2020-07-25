@@ -7,12 +7,13 @@ import { register } from '../actions/auth';
 import PropTypes from 'prop-types';
 import API from "../Utils/API";
 
-function loadItems() {
-    API.getInventoryItems()
-        .then(res =>
-            console.log(res.data)
-        )
-}
+// For testint API Route
+// function loadItems() {
+//     API.getInventoryItems()
+//         .then(res =>
+//             console.log(res.data)
+//         )
+// }
 
 //import axios from 'axios';
 
@@ -65,22 +66,26 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
     }
     return (
         <Fragment>
-            <section className="container">
-                <h1 className="large text-primary">Register</h1>
-                <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
+            <section className="container col-md-12" id="registerForm">
+                <h1 className="large">Register</h1>
+                <p className="lead registerTitle"><i className="fas fa-user"></i> Create Your Account</p>
                 <form className="form" onSubmit={event => onSubmit(event)}>
-                    <div className="form-group">
-                        <input type="text" placeholder="Name" name="name" value={name} onChange={event => onChange(event)} />
+                    <div class="form-group col-md-8">
+
+                        <input className="form-control" type="text" placeholder="Name" name="name" value={name} onChange={event => onChange(event)} />
                     </div>
-                    <div className="form-group">
-                        <input type="email" placeholder="Email Address" name="email" value={email} onChange={event => onChange(event)} />
-                        {/* <small className="form-text"
+                    <div class="form-group col-md-8">
+
+
+                        <input className="form-control" id="inputEmail3" type="email" placeholder="Email Address" name="email" value={email} onChange={event => onChange(event)} />
+                    </div>
+                    {/* <small className="form-text"
                         >(This site uses Gravatar so if you want a profile image, use a
             Gravatar email)</small
                         > */}
-                    </div>
-                    <div className="form-group">
-                        <input
+
+                    <div class="form-group col-md-8">
+                        <input className="form-control"
                             type="password"
                             placeholder="Password"
                             value={password} onChange={event => onChange(event)}
@@ -88,8 +93,8 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
                         // minLength="6"
                         />
                     </div>
-                    <div className="form-group">
-                        <input
+                    <div class="form-group col-md-8">
+                        <input className="form-control"
                             type="password"
                             placeholder="Confirm Password"
                             name="password2"
@@ -99,14 +104,14 @@ const RegisterForm = ({ setAlert, register, isAuthenticated }) => {
                     </div>
                     <input type="submit" className="btn btn-primary" value="Register" />
                 </form>
-                <p className="subtext">
+                <p className="subtext" style={{ textAlign: 'center' }}>
                     Already have an account? <a href="/login">Sign In</a>
                 </p>
-                <button onClick={loadItems}>API TEST</button>
+                {/* <button onClick={loadItems}>API TEST</button> */}
 
             </section>
 
-        </Fragment>
+        </Fragment >
 
 
 

@@ -8,14 +8,19 @@ import API from "../Utils/API.js"
 
 export default function Closet() {
   const [item, setItem] = useState({});
-  useEffect(() => { API.getClosets().then(item => { setItem(item.data) }) })
+  useEffect(() => { API.getInventoryItems().then(item => { setItem(item.data) }) })
   return (
 
     <div className="MainClosetDiv">
       <div className="container-fluid">
         <div class="row">
           <div class="col-sm dashboard-col">
-            <h3>Weather data card(s)</h3>
+            <Weather />
+          </div>
+          <div class="col-sm dashboard-col">
+            <Weather />
+          </div>
+          <div class="col-sm dashboard-col">
             <Weather />
           </div>
         </div>
