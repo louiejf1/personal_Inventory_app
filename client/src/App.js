@@ -31,6 +31,7 @@ const App = () => {
   return (
 
     <Provider store={store} >
+
       <React.Fragment>
         <Navigation />
 
