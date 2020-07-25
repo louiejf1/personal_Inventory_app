@@ -10,7 +10,7 @@ import Form from "../Components/Form"
 const Dashboard = (props) => {
     return (
 
-
+      <div>
     <div>
       <div className="container-fluid dashboard">
         <div className="col">
@@ -41,8 +41,10 @@ const Dashboard = (props) => {
 
         <div className="row"></div>
       </div>
+      
     </div>
-
+    <Footer/>
+  </div>
 
 
     );
