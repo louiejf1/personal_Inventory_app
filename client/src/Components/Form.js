@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import Button from "./Button";
 import API from "../Utils/API"
 
+
+// use reducer for switch states statements
+// actions and displays
+
+
 function Form() {
   const [formObject, setFormObject] = useState({
     invCategory: " ",
@@ -9,6 +14,7 @@ function Form() {
     invItemDescription: " ",
     important: false,
   })
+console.log(API)
 
   // don't need when using checkboxes
   const handleChangeCategory = (event) => {
@@ -41,16 +47,19 @@ function Form() {
 
   const handleFormSave = (event) => {
     event.preventDefault();
-    const categoryData = event.target.value
+    // const categoryData = event.target.value
     console.log("Item has been saved!")
     console.log(formObject)
-    console.log(categoryData)
-    API.categoryData({ formObject }).then(cancelItem())
+
+    // console.log(" This is " + categoryData)
+    API.saveinventoryItem({formObject})
+
   }
 
   const cancelItem = () => {
     // clears all input data and resets the option area and sends user back to 
     // the dashboard page
+    console.log("Help me")
     setFormObject({
       invCategory: " ",
       invItemName: " ",
@@ -59,43 +68,40 @@ function Form() {
     })
   }
 
+
   return (
-    <div>
-      <div>
-        <div className="row">
-          <div>
             <div className="card">
+              <h5 className="card-header">Add Item</h5>
               <div className="card-body">
-                <form>
-                  <div>
-                    {/* use checkboxes (use for ref) */}
-                    <select onChange={handleChangeCategory} name="invCategory">
-                      <option value=" ">None</option>
-                      <option value="saveCloset">Closet</option>
-                      <option value="saveCollectibles">Collectibles</option>
-                      <option value="savePaperwork">Paperwork</option>
-                      <option value="saveDonation">Donations</option>
-                    </select>
-                    <input onChange={handleChangeItem} name="invItemName" />
-                    <textarea onChange={handleChangeDescription} name="invItemDescription" />
-                    <input type="checkbox" onChange={handleChangeImportant} name="important" />
-                  </div>
-                  <div>
-                    {/* <Button onClick={()=>handleFormSave}/> */}
-                    <Button type="submit" onClick={handleFormSave} />
 
-                  </div>
-                  <div>
-                    <Button onClick={cancelItem} />
-
-                  </div>
-                </form>
+              <form onSubmit={(event)=> handleFormSave(event)}>
+                <div>
+                  {/* use checkboxes (use for ref) */}
+                  <p className="card-text">Select A Category</p>
+                  <select onChange= {handleChangeCategory} name="invCategory">
+                    <option>None</option>
+                    <option>Closet</option>
+                    <option>Collectibles</option>
+                    <option>Paperwork</option>
+                    <option>Donations</option>
+                  </select>
+                  <p className="card-text">Item Name</p>
+                  <input onChange= {handleChangeItem}  name="invItemName"/>
+                  <p className="card-text">Item Description</p>
+                  <textarea onChange= {handleChangeDescription}  name="invItemDescription"/>
+                  <p className="card-text">Is this an important item?</p>
+                  <input type="checkbox" onChange={handleChangeImportant} name="important" />
+                </div>
+                <div>
+                  <Button type="submit"  buttonName={"Save"}/>     
+                </div>
+                <div>
+                  <Button href="/dashboard" onClick={cancelItem}buttonName={"Cancel"}/>            
+                </div>
+              </form>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   );
 }
 
