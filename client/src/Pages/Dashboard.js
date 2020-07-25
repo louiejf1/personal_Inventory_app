@@ -10,21 +10,39 @@ const Dashboard = (props) => {
     return (
 
 
-        <div>
+        <div className="dashboardDiv">
             <div className="container-fluid dashboard">
                 <div className="col">
                     <div className="row">
                         <div className="col-sm dashboard-col">
-                            <h3> Go To Closet</h3>
-                            <Card />
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Go to Closet</h5>
+                                    <a href="closet" className="btn btn-primary">
+                                        Click Here!
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-sm dashboard-col">
-                            <h3>Go To Collectables</h3>
-                            <Card />
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Go to Collectables</h5>
+                                    <a href="collectables" className="btn btn-primary">
+                                        Click Here!
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-sm dashboard-col">
-                            <h3>Go To Paperwork</h3>
-                            <Card />
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">View your Paperwork</h5>
+                                    <a href="paperwork" className="btn btn-primary">
+                                        Click Here!
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {/* <div className="row"><div className="col-sm dashboard-col">
@@ -32,7 +50,6 @@ const Dashboard = (props) => {
               <Form />
             </div></div> */}
                     <div className="row"><div className="col-sm dashboard-col">
-                        <h3>Add</h3>
                         <Form />
                     </div></div>
 
