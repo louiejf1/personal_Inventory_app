@@ -57,7 +57,7 @@ const FileUpload = (props) => {
             {uploadedFile ? (<div className="row mt-5">
                 <div className="col-md-6 m-auto">
                     <h3 className="text-center">{uploadedFile.fileName}</h3>
-                    <img style={{ width: '30%' }} src={uploadedFile.filePath} alt='' />
+                    {/* <img style={{ width: '30%' }} src={uploadedFile.filePath} alt='' /> */}
                 </div>
             </div>) : null}
         </Fragment>

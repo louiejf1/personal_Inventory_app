@@ -1,12 +1,12 @@
 /* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #e8e9ed;
   color: #53599a;
 }
@@ -26,6 +26,7 @@ body {
   background-repeat: no-repeat;
   padding: 50px;
   height: 100vh;
+  text-align: center;
 }
 
 .MainPaperworkDiv {
@@ -118,12 +119,31 @@ body {
   text-align: center;
 }
 
-
 .wishlist {
   max-width: 35rem;
-
 }
 
 .navbar.inner {
   background: transparent;
+}
+
+.dashboardDiv {
+  background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.inputArea {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.formBtn {
+  margin: 10px 0;
+}
+
+.buttons {
+  padding: 10px;
 }
