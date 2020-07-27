@@ -1,7 +1,5 @@
 /* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 .MainLoginDiv {
   background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
@@ -24,12 +22,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position:fixed;
+  position: fixed;
   padding-bottom: 50px;
   height: 100%;
+  width: 100%;
 }
 
-.btn{
+.btn {
   color: #fff;
 }
 
@@ -103,14 +102,13 @@ C1EEFF
 
 .lead {
   font-size: 1.5rem;
- margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .alert-danger {
   background: var(--danger-color);
   color: #fff;
 }
-
 
 /*hide Logout icon */
 .hide-sm {
@@ -127,12 +125,10 @@ C1EEFF
 }
 
 .footer {
-
   height: 10%;
-
+  text-align: center;
+  align-items: center;
   bottom: 0;
-  left:0;
-  right: 0;
   width: 100%;
 }
 
@@ -148,7 +144,6 @@ C1EEFF
   align-items: left;
   text-align: left;
 }
-
 
 .wishlist {
   max-width: 25rem;

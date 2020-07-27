@@ -8,7 +8,6 @@ const Wrapper = styled.section`
   color: #53599a;
   margin-bottom: 25px;
   width: 100%;
-  height: 100%;
   border-radius: 10px;
 `;
 
