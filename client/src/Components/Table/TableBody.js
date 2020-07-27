@@ -2,15 +2,18 @@ import React from "react";
 import moment from "moment"
 
  function TableBody({items, category}){
+
+ 
     
     return(
 
            
-              items.filter(items=>items.invCategory=== category).map(item=>{
+              items.filter(items=>items.invCategory==category).map(item=>{
+                console.log("item is", item, item.category)
         
             return (
         <tr>
-          <td>{item.invCategory}</td>
+          <th scope="row">{item.invCategory}</th>
           <td>{item.invItemName}</td>
           {/* <td>{item.invItemImgUrl}</td> */}
           <td>{item.invItemDescription}</td>

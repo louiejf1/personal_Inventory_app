@@ -9,57 +9,64 @@ import Axios from 'axios';
 import { Provider } from "../Components/wishlistContext";
 import WishlistAdd from '../Components/WishlistAdd';
 import WishlistHeader from '../Components/WishlistHeader';
-import { TableCloset} from "../Components/Table";
-import API from "../Utils/API.js"
+import API from '../Utils/API';
+import TaskManager from '../Components/TaskManager/TaskManager';
+import { TableCloset } from "../Components/Table";
+
+
 
 
 export default function Collectables() {
 
-  const[items,setItems]=useState([]);
+  const [data, getData] = useState([]);
 
-useEffect(()=>{
-  loadCloset()
-},[])
+  const [items, setItems] = useState([]);
 
-const loadCloset = () =>{
-  API.getinventoryItems()
-  .then(res=>{ return setItems(res.data)})
-  // need to filter either the API call or the data res to only display closet items
-}
+  useEffect(() => {
+    loadCloset()
+  }, [])
+
+  const loadCloset = () => {
+    API.getinventoryItems()
+      .then(res => { return setItems(res.data) })
+    // need to filter either the API call or the data res to only display closet items
+  }
+
+
 
   return (
+
+
     <div className="MainClosetDiv">
-      <div className="container-fluid">
-        <p className='text-center mb-4'>Upload file Test</p>
+      <div className="col-md-12" style={{ justifyItems: "center" }}>
+        <div className="container-fluid">
+          <Provider>
 
-        <FileUpload />
-        <div>
-          <Form />
-        </div>
-        <Provider>
-          <div className="wishlist">
-            <WishlistHeader />
-            <WishlistAdd />
-            <Wishlist />
+            <div classname="wishlist" style={{ paddingLeft: "20px" }}>
+              <div style={{ float: "left", paddingTop: "35px", margin: "30px" }}>
+                <Form />
+              </div>
+              <div style={{ float: "left", margin: "30px", paddingBottom: "30px" }}>
+                <TaskManager />
+              </div>
+
+            </div>
 
 
-            {/* //API place holder
-          <ul>
-            {
-              data.map(todo => (
-                <li key={todo.id}>
-                  {todo.title}
-                </li>
-              ))
-            }
-          </ul> */}
+
+
+
+            <div>
+              <TableCollectibles />
+            </div>
+          </Provider>
+          <div>
+            <TableCloset items={items} category={"Collectables"} />
           </div>
-        </Provider>
-        <div>
-        <TableCloset items={items} category={"collectables"}/>
-        </div>
-      </div>
 
-    </div>
+        </div>
+      </div > </div >
+
+  
   );
 }

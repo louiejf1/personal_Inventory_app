@@ -11,7 +11,7 @@ const inventoryItemSchema = new Schema({
 
     invItemDescription: String,
     invItemImgUrl: String,
-    important: { type: Boolean, default: false },
+    important: String,
 
     date: { type: Date, default: Date.now }
 

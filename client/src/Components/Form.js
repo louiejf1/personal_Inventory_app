@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import API from "../Utils/API"
-import Fragment from "./FileUpload"
+import FileUpload from "./FileUpload"
+
 
 
 
@@ -15,7 +16,7 @@ function Form() {
     invItemName: " ",
     invItemDescription: " ",
     invItemImgUrl: " ",
-    important: false,
+    important: "",
   })
   console.log(API)
 
@@ -45,9 +46,15 @@ function Form() {
   const handleChangeImportant = (event) => {
     event.preventDefault();
     const target = event.target;
-    const important = target.name === 'important' ? target.checked : target.value
+    let important = target.name === 'important' ? target.checked : target.value
     console.log(important)
-    setFormObject({ ...formObject, important: important })
+    if (important === true) {
+      important = "Yes"
+      setFormObject({ ...formObject, important: important })
+    } else {
+      important = "No"
+      setFormObject({ ...formObject, important: important })
+    }
   }
 
 
@@ -63,7 +70,7 @@ function Form() {
     console.log("Item has been saved!")
     console.log(formObject)
 
-    API.saveinventoryItem({ formObject })
+    API.saveinventoryItem(formObject)
   }
 
 
@@ -82,44 +89,45 @@ function Form() {
   }
 
   return (
-    <div className="card">
+
+
+
+    <div className="card form">
       <h5 className="card-header">Add An Item</h5>
 
-      {/* <div className="card-body"> */}
+      <div className="card-body">
 
-      <form className="inputArea" onSubmit={(event) => handleFormSave(event)}>
-        <div>
-          {/* use checkboxes (use for ref) */}
-          <div className="col-sm dashboard-col">
-            <select onChange={handleChangeCategory} name="invCategory">
-              <option value=" ">None</option>
-              <option value="saveCloset">Closet</option>
-              <option value="saveCollectibles">Collectibles</option>
-              <option value="savePaperwork">Paperwork</option>
-              <option value="saveDonation">Donations</option>
+        <form onSubmit={(event) => handleFormSave(event)}>
+          <div className="form-group">
+            {/* use checkboxes (use for ref) */}
+            <label for="sell">Select Category:</label>
+            <select id="sell" className="form-control" onChange={handleChangeCategory} name="invCategory">
+              <option >None</option>
+              <option >Closet</option>
+              <option >Collectibles</option>
+              <option >Paperwork</option>
+              <option >Donations</option>
+
             </select>
+            <br />
+            <label for="name">Item Name:</label>
+            <input id="name" className="form-control" onChange={handleChangeItem} placeholder="Item name..." name="invItemName" />
+            <br />
+            <label for="comment">Item Description:</label>
+            <textarea id="comment" className="form-control" placeholder="Item description..." onChange={handleChangeDescription} rows="10" name="invItemDescription" />
+            <br />
+            <p className="card-text">Is this an important item?</p>
+            <input className="checkbox-inline" type="checkbox" onChange={handleChangeImportant} name="important" />
+            <FileUpload onChange={fileSave} />
           </div>
-          <div className="col-sm dashboard-col">
-            <input onChange={handleChangeItem} placeholder="Item Name" name="invItemName" />
-          </div>
-          <div className="col-sm dashboard-col">
-            <textarea onChange={handleChangeDescription} placeholder="Item Description" name="invItemDescription" />
-          </div>
-          <p className="card-text">Is this an important item?</p>
-          <input type="checkbox" onChange={handleChangeImportant} name="important" />
-          <Fragment onChange={fileSave} />
-        </div>
-        <div className="formBtn">
-          <div className="col-sm dashboard-col">
+          <div className="btn-group">
             <Button type="submit" href="./dashboard" buttonName={"Save"} />
-          </div>
-          <div className="col-sm dashboard-col">
             <Button onClick={cancelItem} buttonName={"Cancel"} />
           </div>
-        </div>
-      </form>
-      {/* </div> */}
+        </form>
+      </div>
     </div>
+
 
   );
 }

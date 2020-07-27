@@ -4,8 +4,7 @@ import Button from "../Components/Button";
 import Items from "../Components/ItemInfo";
 import Weather from "../Components/Weather";
 import { TableCloset } from "../Components/Table";
-import API from "../Utils/API.js";
-import Search from "../Components/Search";
+import API from "../Utils/API.js"
 
 
 export default function Closet() {
@@ -31,26 +30,33 @@ export default function Closet() {
   let searchVariable = "closet"
   console.log(searchVariable)
 
-  return (
 
-    <div className="MainClosetDiv">
-      <div className="container-fluid">
-        <div className="row">
-          <Search onChange={handleSearch} />
-          <div className="col-sm dashboard-col">
-            <h3>Weather data card(s)</h3>
-            <Weather />
+
+  return (
+    <div>
+      <div className="MainClosetDiv">
+        <div className="container-fluid">
+          <div class="row">
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+          </div>
+
+          <div className="row col-sm-12">
+            <TableCloset items={items} category={"Closet"} />
+
+            {/* {generateTable(items)} */}
           </div>
         </div>
-        <div>
-          <Button />
-        </div>
-        <TableCloset items={items} category={searchVariable} />
-        {/* {generateTable(items)} */}
-
       </div>
+      <Footer />
     </div>
-
 
   );
 }
