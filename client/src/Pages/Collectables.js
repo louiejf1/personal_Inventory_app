@@ -53,10 +53,6 @@ export default function Collectables() {
 
             </div>
 
-
-
-
-
             {/* <div>
               <TableCollectibles />
             </div> */}

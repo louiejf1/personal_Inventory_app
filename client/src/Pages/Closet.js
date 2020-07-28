@@ -41,18 +41,16 @@ export default function Closet() {
         </div>
 
 
+
+
+
         <div className="row col-sm-12">
           <TableCloset items={items} category={"Closet"} />
 
-
-
-          <div className="row col-sm-12">
-            <TableCloset items={items} category={"Closet"} />
-
-            {/* {generateTable(items)} */}
-          </div>
+          {/* {generateTable(items)} */}
         </div>
       </div>
+
 
       <Footer />
     </div>
