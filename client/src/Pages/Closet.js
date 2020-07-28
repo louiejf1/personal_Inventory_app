@@ -27,6 +27,9 @@ export default function Closet() {
   return (
 
     <div className="MainClosetDiv">
+      <div style={{ float: "left", paddingTop: "35px", margin: "30px" }}>
+        <Form />
+      </div>
       <div className="container-fluid">
         <div class="row">
           <div class="col-sm dashboard-col">

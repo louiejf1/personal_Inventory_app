@@ -36,8 +36,7 @@ export default function Paperwork() {
 
 
 
-        <div>
-          {/* <FormBackup /> */}
+        <div style={{ float: "left", paddingTop: "35px", margin: "30px" }}>
           <Form />
         </div>
         <div style={{ justifyItems: "center" }}>

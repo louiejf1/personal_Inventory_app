@@ -1,6 +1,5 @@
 /* Global Styles */
 
-
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .MainLoginDiv {
   background-image: url(./Images/shallow-focus-photography-of-clothes-994517.jpg);
@@ -254,6 +252,7 @@ C1EEFF
   align-items: center;
   text-align: center;
   color: black;
+  margin-top: 55px;
 }
 .WeatherCard.warm {
   width: 200px;
