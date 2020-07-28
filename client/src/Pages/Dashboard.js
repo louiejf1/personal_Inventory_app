@@ -4,6 +4,7 @@ import Card from "../Components/Card";
 import Search from "../Components/Search";
 import Weather from "../Components/Weather";
 import Form from "../Components/Form"
+import Footer from "../Components/Footer";
 // import Reducer from "../Components/Reducer"
 const Dashboard = (props) => {
   return (
@@ -52,7 +53,8 @@ const Dashboard = (props) => {
         </div>
         <div className="row"></div>
       </div>
-    </div>
+      <Footer />
+    </div >
   );
 };
 Dashboard.propTypes = {};

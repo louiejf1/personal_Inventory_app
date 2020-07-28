@@ -38,16 +38,33 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
+  position: fixed;
+  padding-bottom: 50px;
+  height: 100%;
+  width: 100%;
 }
+
+.btn {
+  color: #fff;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #c1eeff;
+}
+
+/* 0A090C
+C1EEFF
+53599A */
 
 .MainClosetDiv {
   background-image: url(./Images/grayscale-photography-of-assorted-apparels-on-shelf-rack-1884581.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
-  height: 100vh;
+  /* position:fixed; */
+  /* position: absolute; */
+  padding-bottom: 50px;
+  height: 100%;
 }
 
 .MainPaperworkDiv {
@@ -55,8 +72,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
-  height: 100vh;
+  /* position: absolute; */
+  padding-bottom: 50px;
+  /* position:fixed; */
+  height: 100%;
 }
 
 .mainFormDiv {
@@ -70,7 +89,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
-  height: 100vh;
+  height: 100%;
 }
 
 .MainCollectablesDiv {
@@ -124,6 +143,8 @@ body {
 .footer {
   height: 10%;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
 }
 
@@ -136,8 +157,8 @@ body {
 }
 
 .card {
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 .wishlist {
@@ -170,6 +191,9 @@ body {
 
 .lead.registerTitle {
   color: black;
+}
+.footer {
+  text-align: center;
 }
 
 /* Login card component */

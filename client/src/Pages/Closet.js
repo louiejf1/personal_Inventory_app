@@ -25,29 +25,32 @@ export default function Closet() {
 
 
   return (
+    <div>
+      <div className="MainClosetDiv">
+        <div className="container-fluid">
+          <div class="row">
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+            <div class="col-sm dashboard-col">
+              <Weather />
+            </div>
+          </div>
 
-    <div className="MainClosetDiv">
-      <div className="container-fluid">
-        <div class="row">
-          <div class="col-sm dashboard-col">
-            <Weather />
-          </div>
-          <div class="col-sm dashboard-col">
-            <Weather />
-          </div>
-          <div class="col-sm dashboard-col">
-            <Weather />
+
+
+          <div className="row col-sm-12">
+            <TableCloset items={items} category={"Closet"} />
+
+            {/* {generateTable(items)} */}
           </div>
         </div>
-        <div>
-          <Button />
-        </div>
-        <TableCloset items={items} category={"Closet"} />
-        {/* {generateTable(items)} */}
-
       </div>
+      <Footer />
     </div>
-
 
   );
 }

@@ -12,6 +12,8 @@ import WishlistHeader from '../Components/WishlistHeader';
 import API from '../Utils/API';
 import TaskManager from '../Components/TaskManager/TaskManager';
 import { TableCloset } from "../Components/Table";
+import Footer from '../Components/Footer';
+
 
 
 
@@ -34,6 +36,7 @@ export default function Collectables() {
 
 
   return (
+
 
     <div className="MainClosetDiv">
       <div className="col-md-12" style={{ justifyItems: "center" }}>
@@ -63,6 +66,10 @@ export default function Collectables() {
           </div>
 
         </div>
-      </div > </div >
+      </div >
+      <Footer />
+    </div >
+
+
   );
 }

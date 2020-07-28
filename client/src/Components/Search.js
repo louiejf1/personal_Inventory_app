@@ -14,10 +14,13 @@ export default function Search() {
         setSearch({ ...search, search: inputSearch })
     }
 
-    function searchItem(data) {
-        let id = data;
-        API.getInventoryItem(id)
-    }
+
+
+    // function searchItem() = {
+    //     let id = data;
+    //     API.getInventoryItem(id)
+    // }
+
 
     return (
         <div>

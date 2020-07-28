@@ -5,9 +5,10 @@ import Card from "../Components/Card";
 import LoginCard from "../Components/LoginCard";
 
 
+
 export default function Home() {
   return (
-
+    <div>
     <div className="MainHomeDiv">
       <Jumbotron />
       <div className="container-fluid register">
@@ -19,7 +20,10 @@ export default function Home() {
           <div className="col-sm-4"></div>
         </div>
       </div>
+      
     </div>
+    <Footer/>
+</div>
 
 
   );
