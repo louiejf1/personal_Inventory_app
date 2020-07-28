@@ -52,12 +52,14 @@ export default function Paperwork() {
 
 
 
-      
+
        <div className="row col-sm-12">
         <TableCloset items={items} category={"Paperwork"}/>
        </div>
 
+
       </div>
+      <Footer />
     </div>
 
 

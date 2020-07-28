@@ -12,6 +12,7 @@ import WishlistHeader from '../Components/WishlistHeader';
 import API from '../Utils/API';
 import TaskManager from '../Components/TaskManager/TaskManager';
 import { TableCloset } from "../Components/Table";
+import Footer from '../Components/Footer';
 
 
 
@@ -56,17 +57,19 @@ export default function Collectables() {
 
 
 
-            <div>
+            {/* <div>
               <TableCollectibles />
-            </div>
+            </div> */}
           </Provider>
           <div>
             <TableCloset items={items} category={"Collectables"} />
           </div>
 
         </div>
-      </div > </div >
+      </div >
+      <Footer />
+    </div >
 
-  
+
   );
 }

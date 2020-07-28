@@ -3,25 +3,21 @@ table {
   width: 90%;
   margin-left: 5%;
   border-top: solid 1px #dddddd;
+  background: rgb(223, 222, 222);
 }
-
 thead tr {
   font-weight: bold;
 }
-
 th,
 td {
   padding: 10px 15px;
 }
-
 tbody tr {
   border-bottom: solid 1px #dddddd;
 }
-
 tbody tr:nth-of-type(odd) {
   background-color: #f3f3f3;
 }
-
 img {
   height: 70px;
 }
