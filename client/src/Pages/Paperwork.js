@@ -19,8 +19,13 @@ export default function Paperwork() {
   }, [])
 
   const loadCloset = () => {
+    console.log("request launched")
     API.getinventoryItems()
-      .then(res => { return setItems(res.data) })
+      .then(res => { 
+
+        console.log("response is in", res)
+        return setItems(res.data) 
+      })
     // need to filter either the API call or the data res to only display closet items
   }
 
@@ -47,9 +52,12 @@ export default function Paperwork() {
 
 
 
-        <div>
-          <TableCloset items={items} category={"Paperwork"} />
-        </div>
+
+       <div className="row col-sm-12">
+        <TableCloset items={items} category={"Paperwork"}/>
+       </div>
+
+
       </div>
       <Footer />
     </div>

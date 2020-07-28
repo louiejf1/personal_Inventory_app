@@ -5,7 +5,7 @@ import React from "react";
 
 
 export function TableCloset(props) {
-    // console.log(items);
+    console.log("props are", props);
 
     return (
         <table className="table table-striped">
